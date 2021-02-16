@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/styles/socials.css" />
+<div class="socials">
+    {% for social in socials %}
+        <a href="{{ social.link }}">
+            <img src="/assets/socials/{{ social.icon }}"></img>
+        </a>
+    {% endfor %}
+</div>
