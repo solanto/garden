@@ -1,16 +1,18 @@
-<hr>
-{% if backlinks.length > 0 %}
-<p class="backlinks-title larger">linked in:</p>
-<ul class="backlinks-container">
-    {% for link in backlinks %}
-        <li class="backlink">
-            <a href="{{ link.url }}" class="backlink__link">{{ link.title }}</a>
-            <div class="backlink__preview" role="none">
+<div class="backlinks">
+    <p class="backlinks-signal">
+    {% if backlinks.length > 0 %}{{ backlinks.length }} incoming link{% unless backlinks.length == 1 %}s{% endunless %}:
+    </p>
+    <ul>
+        {% for link in backlinks %}
+        <li>
+            <a href="{{ link.url }}">{{ link.title | downcase }}</a>
+            <div class="preview" role="none">
                 {{ link.preview | markdownify }}
             </div>
         </li>
-    {% endfor %}
-</ul>
-{% else %}
-    <p class="backlinks-default">not linked anywhere else</p>
-{% endif %}
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="backlinks-signal">no incoming links</p>
+    {% endif %}
+</div>

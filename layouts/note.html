@@ -4,4 +4,11 @@ layout: default
 <article>
     {{content}}
 </article>
-{% include backlinks.html %}
+<hr>
+<section class="note-details">
+    <p class="page-date">
+        {{ page.date | date: "%e %b. %Y" | downcase }} /
+        {% if modified %}edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
+    </p>
+    {% include backlinks.html %}
+</section>

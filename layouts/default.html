@@ -4,23 +4,20 @@
     {% include head.html %}
 </head>
 <body>
-    <header class="page-header">
-        <a href="/" class="page-header__logo" title="Go home">
+    <header class="header">
+        <a href="/" class="logo" title="home">
             <img src="/assets/avatar.png" alt="" width="48">
         </a>
-
         <nav>
-            <a href="/">Home</a>
-            <a href="/about">About Me</a>
-            <a href="/notes">Notes</a>
+            <a href="/notes">notes</a>
         </nav>
     </header>
     <main>
-        {{content}}
+        {{ content }}
     </main>
-    
-    <footer class="page-footer">
-        <small>Copyright {{site.author}}</small>
+    <hr>
+    <footer class="footer">
+        {% include socials.html %}
     </footer>
 </body>
 </html>

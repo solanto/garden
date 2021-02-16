@@ -1,11 +1,11 @@
 {% assign metatitle = site.title %}
 
 {% if type == "note" %}
-    {% assign metatitle = site.author | append: "'s Notes" %}
+    {% assign metatitle = site.author | append: "'s notes" %}
 {% endif %}
 
 {% if title %}
-    {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
+    {% assign metatitle = metatitle | prepend: " • " | prepend: title | downcase%}
 {% endif %}
 
 {% assign metadesc = site.desc %}
@@ -24,22 +24,23 @@
 
 <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
-<title>{{- metatitle -}}</title>
+<title>{{-metatitle-}}</title>
 
-<meta name="description" content="{{- metadesc -}}">
+<meta name="description" content="{{-metadesc-}}">
 
 <meta property="og:title" content="{{-metatitle-}}">
 <meta property="og:type" content="{{-metatype-}}">
 <meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
 <meta property="og:image" content="/assets/avatar.png">
-<meta property="og:description" content="{{- metadesc -}}">
+<meta property="og:description" content="{{-metadesc-}}">
 
 <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
 
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Fira+Code&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/prism-theme.css">
