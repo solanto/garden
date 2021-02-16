@@ -75,6 +75,13 @@ pre, code {
     white-space: pre-wrap;
 }
 
+pre {
+    code {
+        background-color: none;
+        box-shadow: none;
+    }
+}
+
 .page-date {
     display: inline-block;
 }
