@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
     const md = markdownIt(markdownItOptions)
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-attrs'))
+    .use(require('markdown-it-implicit-figures'), {
+        figcaption: true,
+        link: true
+    })
     .use(function(md) {
         // Recognize Mediawiki links ([[text]])
         md.linkify.add("[[", {
@@ -21,6 +25,17 @@ module.exports = function(eleventyConfig) {
             }
         })
     })
+
+    const pluginSass = require("eleventy-plugin-sass");
+    eleventyConfig.addPlugin(pluginSass);
+
+    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+    eleventyConfig.addPlugin(syntaxHighlight, {
+        alwaysWrapLineHighlights: true
+    })
+
+    const yaml = require("js-yaml");
+    eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
     
     eleventyConfig.addFilter("markdownify", string => {
         return md.render(string)
