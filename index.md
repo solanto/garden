@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: home
+icon: ⛩️
 ---
-# Hi
+# hello, there.
 
-I'm John Lemmon. I'm an umpteen year-old developer and musician from Liverpool, England.
+I'm Andrew. I grow some of my thoughts here.
+
+I'm a civil engineering student at Johns Hopkins, and I can never decide whether I have one too few or one too many hobbies.
