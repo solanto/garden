@@ -1,18 +1,16 @@
-<div class="backlinks">
-    <p class="backlinks-signal">
-    {% if backlinks.length > 0 %}{{ backlinks.length }} incoming link{% unless backlinks.length == 1 %}s{% endunless %}:
-    </p>
-    <ul>
-        {% for link in backlinks %}
-        <li>
-            <a href="{{ link.url }}">{{ link.title | downcase }}</a>
-            <div class="preview" role="none">
-                {{ link.preview | markdownify }}
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <p class="backlinks-signal">no incoming links</p>
-    {% endif %}
-</div>
+<p class="backlinks-signal">
+{% if backlinks.length > 0 %}{{ backlinks.length }} incoming link{% unless backlinks.length == 1 %}s{% endunless %}:
+</p>
+<ul class="backlinks">
+    {% for link in backlinks %}
+    <li>
+        <a href="{{ link.url }}">{{ link.title | downcase }}</a>
+        <div class="preview" role="none">
+            {{ link.preview | markdownify }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="backlinks-signal">no incoming links</p>
+{% endif %}
