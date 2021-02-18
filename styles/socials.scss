@@ -1,15 +1,32 @@
 .socials {
     $size: 1.7em;
+    $padding: 0.15em;
     
     height: $size;
 
     a {
         height: inherit;
         text-decoration: none;
-        margin: 0 ($size / 4);
+        margin-right: $size / 4 - $padding;
+        padding: $padding;
+        display: inline-block;
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         img {
             height: inherit;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: black;
+
+            @supports (filter: invert(1)) {
+                filter: invert(1);
+                background-color: white;
+            }
         }
     }
 }
