@@ -1,20 +1,93 @@
+$bg-corners: 0.3em;
+
+@font-face {
+    font-family: "Emoji";
+    src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/NotoColorEmoji.ttf");
+    font-display: fallback;
+}
+
 body {
-    font-family: "Bitter";
+    font-family: "Bitter", "", "Emoji";
     max-width: 9in;
     padding: 1.4em;
     margin: 1.4em auto;
     margin-bottom: 0;
     background-color: #f5f4f2;
+    font-display: swap;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    .page-icon {
+        font-size: 3em;
+    }
+
+    .page-icon, nav a {
+        margin-right: 1rem;
+    }
+
+    nav {
+        $margin: 0.2em;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 5em;
+        margin-bottom: -$margin;
+
+        a {
+            width: fit-content;
+            border: 1px solid lightgrey;
+            margin-bottom: $margin;
+
+            &:hover {
+                border: 1px solid black;
+            }
+        }
+    }
 }
 
 article {
-    margin: 1em 0 2em 0;
+    margin: 1em 0;
+
+    a {
+        &::before { content: "{" }
+        &::after { content: "}" }
+    }
+
+    .external {
+        &::before { content: "[" }
+        &::after { content: "]" }
+    }
+}
+
+a {
+    border-radius: $bg-corners;
+    transition: 0.1s;
+    padding: 0.1em;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
 
 main {
     min-height: 100%;
     display: block;
     position: relative;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
@@ -31,7 +104,7 @@ hr {
 }
 
 figure, pre, code {
-    border-radius: 0.3em;
+    border-radius: $bg-corners;
     background-color: #FAFAFA;
     color: #575f66;
     box-shadow: 0 0 0.5in transparentize(#575f66, 0.97);
@@ -60,6 +133,16 @@ figure {
             max-height: inherit;
             filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
         }
+
+        &, &.external {
+            &::before { content: none }
+            &::after { content: none }
+
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+            }
+        }
     }
 
     figcaption {
@@ -67,6 +150,20 @@ figure {
         font-style: italic;
         text-align: center;
     }
+}
+
+
+.footnote-ref a, .footnote-backref, .no-decor {
+    &::before { content: none }
+    &::after { content: none }
+}
+
+.footnote-ref a, .footnote-backref {
+    font-family: "Fira Code";
+}
+
+.footnote-item::marker {
+    font-family: "Fira Code";
 }
 
 pre, code {
@@ -90,22 +187,15 @@ pre {
     font-style: italic;
 }
 
-.backlinks {
-    display: inline-block;
+.backlinks, .backlinks-signal {
+    display: inline;
+    padding-inline-start: 0;
+}
 
-    p, ul, li {
-        display: inline-block;
-    }
-
-    ul {
-        display: inline;
-        padding-inline-start: 0;
-    }
-
-    li {
-        margin: 0 0.2em;
-        font-style: normal;
-    }
+.backlinks li {
+    margin: 0 0.2em;
+    font-style: normal;
+    display: inline;
 }
 
 .preview {
