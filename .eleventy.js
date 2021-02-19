@@ -44,25 +44,28 @@ module.exports = function(eleventyConfig) {
         return n;
     };
 
-    eleventyConfig.setLibrary('md', md);
+    eleventyConfig.setLibrary("md", md);
 
-    eleventyConfig.addPlugin(require("eleventy-plugin-sass"));
+    const pluginSass = require("eleventy-plugin-sass");
+    eleventyConfig.addPlugin(pluginSass);
 
-    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"), {
+    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+    eleventyConfig.addPlugin(syntaxHighlight, {
         alwaysWrapLineHighlights: true
-    });
+    })
 
-    eleventyConfig.addDataExtension(require("js-yaml"), contents => yaml.load(contents));
+    const yaml = require("js-yaml");
+    eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
     
     eleventyConfig.addFilter("markdownify", string => md.render(string));
 
-    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
+    const pluginRss = require("@11ty/eleventy-plugin-rss");
+    eleventyConfig.addPlugin(pluginRss);
 
-    eleventyConfig.addPlugin(require("@sherby/eleventy-plugin-files-minifier"));
+    const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
+    eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
     
-    eleventyConfig.addCollection("notes", collection => {
-        return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
-    });
+    eleventyConfig.addCollection("notes", collection => collection.getFilteredByGlob(["notes/**/*.md", "index.md"]));
     
     eleventyConfig.addPassthroughCopy("assets");
 
@@ -76,5 +79,5 @@ module.exports = function(eleventyConfig) {
             data: "data"
         },
         passthroughFileCopy: true
-    };
+    }
 }
