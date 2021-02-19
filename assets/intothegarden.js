@@ -2,7 +2,7 @@ if (!("ontouchstart" in window)) {
     document.head.appendChild((() => {
         const element  = document.createElement("link");
         element.href = "/styles/intothegarden.css";
-        element.rel = "stylesheet"
+        element.rel = "stylesheet";
         return element;
     })());
 
