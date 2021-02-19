@@ -1,21 +1,23 @@
 ---
 layout: default
+nav:
+    - title: back to the entrance
+      link: /
+    - title: look at the guide
+      link: /notes/
 ---
-<header class="header">
-    <div class="page-icon">{{ icon }}</div>
-    <nav>
-        <a href="/" class="back-to-entrance">back to the entrance</a>
-        <a href="/notes/" class="back-to-entrance">look at the guide</a>
-    </nav>
-</header>
-<article>
-    {{content}}
-</article>
-<hr>
-<section class="note-details">
-    <p class="page-date">
-        {{ page.date | date: "%e %b. %Y" | downcase }} /
-        {% if modified %}edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
-    </p>
-    {% include backlinks.html %}
-</section>
+
+{%include page-header.html %}
+<main>
+    <article>
+        {{content}}
+    </article>
+    <hr>
+    <section class="note-details">
+        <p class="page-date">
+            {{ page.date | date: "%e %b. %Y" | downcase }} /
+            {% if modified %}edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
+        </p>
+        {% include backlinks.html %}
+    </section>
+</main>

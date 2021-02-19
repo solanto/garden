@@ -1,12 +1,11 @@
 ---
 layout: default
+nav:
+    - title: into the garden
+      id: into-the-garden
+      link: /notes/
 ---
-<header class="header">
-    <div class="page-icon">{{ icon }}</div>
-    <nav>
-        <a href="/notes/" id="into-the-garden">into the garden</a>
-    </nav>
-</header>
+{%include page-header.html %}
 <main>
     <article>
     {{ content }}

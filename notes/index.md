@@ -1,7 +1,10 @@
 ---
-layout: guide
+layout: note
 title: About these notes
 icon: 🗺️
+nav:
+    - title: back to the entrance
+      link: /
 ---
 # take this guide!
 

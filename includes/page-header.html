@@ -1,0 +1,8 @@
+<header class="header">
+    <div class="page-icon">{{ icon }}</div>
+    <nav>
+        {% for item in nav %}
+        <a href="{{ item.link }}" {% if item.id %}id="{{ item.id }}"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+    </nav>
+</header>
