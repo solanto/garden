@@ -1,17 +1,19 @@
 if (!("ontouchstart" in window)) {
-    document.head.appendChild((() => {
-        const element  = document.createElement("link");
-        element.href = "/styles/intothegarden.css";
-        element.rel = "stylesheet";
-        return element;
-    })());
+    function html(string) {
+        const container = document.createElement("div");
+        container.innerHTML = string;
+        return container.firstElementChild;
+    }
+
+    document.head.appendChild(html`
+        <link rel="stylesheet" href="/styles/intothegarden.css">
+    `);
 
     window.onload = () => {
         const getGardenButton = () => document.getElementById("into-the-garden");
-
-        getGardenButton().parentNode.replaceChild((() => {
-            const element = document.createElement("a");
-            element.innerHTML = `
+        
+        getGardenButton().parentNode.replaceChild(html`
+            <a href="notes" id="into-the-garden">
                 <ul>
                     <li>into the garden</li>
                     <li>hasta el jardín</li>
@@ -19,17 +21,17 @@ if (!("ontouchstart" in window)) {
                     <li>para o jardim</li>
                     <li>in i trädgården</li>
                 </ul>
-            `;
-            
-            element.href = "/notes/";
-            element.id = "into-the-garden";
-            return element;
-        })(), getGardenButton());
+            </a>
+        `, getGardenButton());
 
         const gardenOptions = getGardenButton().getElementsByTagName("ul")[0];
 
-        gardenOptions.addEventListener("mouseenter", event => event.target.style.marginTop = -Math.floor(Math.random() * 4 + 1) * 1.5 + "em")
+        gardenOptions.addEventListener("mouseenter",
+            event => event.target.style.marginTop = -Math.floor(Math.random() * 4 + 1) * 1.5 + "em"
+        );
 
-        gardenOptions.addEventListener("mouseleave", event => event.target.style.marginTop = 0);
+        gardenOptions.addEventListener("mouseleave",
+            event => event.target.style.marginTop = 0
+        );
     };
 }
