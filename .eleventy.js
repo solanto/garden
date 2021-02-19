@@ -42,33 +42,29 @@ module.exports = function(eleventyConfig) {
         }
       
         return n;
-      };
-
-    const pluginSass = require("eleventy-plugin-sass");
-    eleventyConfig.addPlugin(pluginSass);
-
-    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-    eleventyConfig.addPlugin(syntaxHighlight, {
-        alwaysWrapLineHighlights: true
-    })
-
-    const yaml = require("js-yaml");
-    eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
-    
-    eleventyConfig.addFilter("markdownify", string => {
-        return md.render(string)
-    })
-
-    const pluginRss = require("@11ty/eleventy-plugin-rss");
-    eleventyConfig.addPlugin(pluginRss);
+    };
 
     eleventyConfig.setLibrary('md', md);
+
+    eleventyConfig.addPlugin(require("eleventy-plugin-sass"));
+
+    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"), {
+        alwaysWrapLineHighlights: true
+    });
+
+    eleventyConfig.addDataExtension(require("js-yaml"), contents => yaml.load(contents));
     
-    eleventyConfig.addCollection("notes", function (collection) {
+    eleventyConfig.addFilter("markdownify", string => md.render(string));
+
+    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
+
+    eleventyConfig.addPlugin(require("@sherby/eleventy-plugin-files-minifier"));
+    
+    eleventyConfig.addCollection("notes", collection => {
         return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
     });
     
-    eleventyConfig.addPassthroughCopy('assets');
+    eleventyConfig.addPassthroughCopy("assets");
 
     return {
         useGitIgnore: false,
@@ -80,5 +76,5 @@ module.exports = function(eleventyConfig) {
             data: "data"
         },
         passthroughFileCopy: true
-    }
+    };
 }
