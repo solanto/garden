@@ -2,22 +2,22 @@
 layout: default
 nav:
     - title: back to the entrance
-      link: /
+      link:  /
     - title: look at the guide
-      link: /notes/
+      link:  /notes/
 ---
 
-{%include page-header.html %}
 <main>
     <article>
-        {{content}}
+    {{content}}
     </article>
     <hr>
     <section class="note-details">
         <p class="page-date">
             {{ page.date | date: "%e %b. %Y" | downcase }} /
-            {% if modified %}edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
+            {% if modified %} edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
+            <!--space->--> <!--<-space-->
+            {% include backlinks.html %}
         </p>
-        {% include backlinks.html %}
     </section>
 </main>

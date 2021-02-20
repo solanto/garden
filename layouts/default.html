@@ -8,10 +8,14 @@ icon: 🌱
     {% include head.html %}
 </head>
 <body>
+    {% include page-header.html %}
     {{ content }}
     <hr>
     <footer class="footer">
-        {% include socials.html %}
+    {% include socials.html %}
     </footer>
 </body>
+{% for script in scripts %}
+<script src="{{ script }}"></script>
+{% endfor %}
 </html>
