@@ -1,15 +1,15 @@
-- alt: linktree
+- alt:  linktree
   link: https://linktr.ee/andrewsolanto
 
-- alt: instagram
+- alt:  instagram
   link: https://instagram.com/andrewsolanto
 
-- alt: github
+- alt:  github
   link: https://github.com/solanto
 
-- alt: linkedin
+- alt:  linkedin
   link: https://linkedin.com/in/andrewsolanto
 
-- alt: atom feed
+- alt:  atom feed
   link: /feed.xml
   icon: feed
