@@ -6,6 +6,7 @@ nav:
     - title: back to the entrance
       link: /
 ---
+
 # take this guide!
 
 The garden's still in its early stages.
