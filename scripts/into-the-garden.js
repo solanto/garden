@@ -1,10 +1,4 @@
 if (!("ontouchstart" in window)) {
-    function html(string) {
-        const container = document.createElement("div");
-        container.innerHTML = string;
-        return container.firstElementChild;
-    }
-
     document.head.appendChild(html`
         <link rel="stylesheet" href="/styles/intothegarden.css">
     `);
