@@ -10,6 +10,8 @@ nav:
 
 The garden's still in its early stages.
 
-## all my plants - (these are links!)
+## all my plants
+
+*(these are links!)*
 
 {% include notes-list.html %}
