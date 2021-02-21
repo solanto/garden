@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: home
 title: guide
 icon: 🗺️
 nav:
@@ -12,10 +12,4 @@ The garden's still in its early stages.
 
 ## all my plants
 
-{% for item in collections.notes %}
-{% unless item.url == "/notes/" %}
-{% unless item.url == "/" %}
-<p><a href="{{ item.url }}">{{ item.date | date: "%e %b. %Y" | downcase }} - {{ item.data.title }}</a></p>
-{% endunless %}
-{% endunless %}
-{% endfor %}
+{% include notes-list.html %}
