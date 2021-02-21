@@ -152,6 +152,9 @@ figure {
     }
 }
 
+.footnotes-list {
+    padding-inline-start: 2em;
+}
 
 .footnote-ref a, .footnote-backref, .no-decor {
     &::before { content: none }
