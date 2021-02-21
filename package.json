@@ -28,6 +28,7 @@
     "title-case": "^3.0.3"
   },
   "dependencies": {
+    "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eleventy-plugin-sass": "^1.1.1",
     "js-yaml": "^4.0.0",
     "markdown-it-for-inline": "^0.1.1",

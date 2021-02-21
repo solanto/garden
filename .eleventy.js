@@ -3,7 +3,8 @@ module.exports = function(eleventyConfig) {
     const markdownIt = require('markdown-it');
     const markdownItOptions = {
         html: true,
-        linkify: true
+        linkify: true,
+        typographer: true
     };
     
     const md = markdownIt(markdownItOptions)
@@ -64,10 +65,14 @@ module.exports = function(eleventyConfig) {
 
     const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+
+    const typographyPlugin = require("@jamshop/eleventy-plugin-typography");
+    eleventyConfig.addPlugin(typographyPlugin); 
     
     eleventyConfig.addCollection("notes", collection => collection.getFilteredByGlob(["notes/**/*.md", "index.md"]));
     
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("scripts");
 
     return {
         useGitIgnore: false,
