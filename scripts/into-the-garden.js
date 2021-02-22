@@ -10,7 +10,7 @@ if (!("ontouchstart" in window)) {
             <a href="notes" id="into-the-garden">
                 <ul>
                     <li>into the garden</li>
-                    <li>hasta el jardín</li>
+                    <li>hacia el jardín</li>
                     <li>vers le jardin</li>
                     <li>para o jardim</li>
                     <li>in i trädgården</li>
