@@ -1,5 +1,5 @@
 {% for item in collections.notes reversed %}
 {% unless item.url == "/notes/" or item.url == "/" %}
-<p><a href="{{ item.url }}">{{ item.date | date: "%e %b. %Y" | downcase }} - {{ item.data.title | downcase }}</a></p>
+<p><a href="{{ item.url }}">{{ item.date | short_utc | downcase }} - {{ item.data.title | downcase }}</a></p>
 {% endunless %}
 {% endfor %}

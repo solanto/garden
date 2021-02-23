@@ -74,6 +74,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("scripts");
 
+    const moment = require("moment");
+
+    eleventyConfig.addLiquidFilter("short_utc", (date) => {
+        const utc = date.toUTCString();
+        return moment.utc(utc).format("D MMM. YYYY");
+    });
+
     return {
         useGitIgnore: false,
         dir: {

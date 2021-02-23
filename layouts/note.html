@@ -14,8 +14,8 @@ nav:
     <hr>
     <section class="note-details">
         <p class="page-date">
-            {{ page.date | date: "%e %b. %Y" | downcase }} /
-            {% if modified %} edited {{ modified | date: "%e %b. %Y" | downcase }} /{% endif %}
+            {{ page.date | short_utc | downcase }} /
+            {% if modified %} edited {{ modified | short_utc | downcase }} /{% endif %}
             <!--space->--> <!--<-space-->
             {% include backlinks.html %}
         </p>

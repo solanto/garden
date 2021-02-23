@@ -1,6 +1,7 @@
 ---
 title: design philosophy
 scripts: textify-demo
+date: 2021-02-20
 ---
 
 # design philosophy

@@ -1,6 +1,6 @@
 ---
 title: media to consume
-date: 2021-2-21
+date: 2021-02-23
 ---
 
 # media to consume
