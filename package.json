@@ -31,6 +31,7 @@
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eleventy-plugin-sass": "^1.1.1",
     "js-yaml": "^4.0.0",
+    "katex": "^0.12.0",
     "markdown-it-for-inline": "^0.1.1",
     "markdown-it-implicit-figures": "^0.10.0",
     "moment": "^2.29.1"

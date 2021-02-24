@@ -75,11 +75,21 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("scripts");
 
     const moment = require("moment");
-
-    eleventyConfig.addLiquidFilter("short_utc", (date) => {
+    eleventyConfig.addLiquidFilter("shortutc", date => {
         const utc = date.toUTCString();
         return moment.utc(utc).format("D MMM. YYYY");
     });
+
+    const katex = require("katex");
+
+    eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {
+        throwOnError: false
+    }));
+
+    eleventyConfig.addPairedShortcode("mathd", latex => '<figure class="math">' + katex.renderToString(latex, {
+        throwOnError: false,
+        displayMode: true
+    }) + "</figure>");
 
     return {
         useGitIgnore: false,

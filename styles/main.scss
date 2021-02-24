@@ -2,12 +2,26 @@ $bg-corners: 0.3em;
 
 @font-face {
     font-family: "Emoji";
-    src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/NotoColorEmoji.ttf");
+    src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/fonts/noto-color-emoji.ttf");
     font-display: fallback;
 }
 
+@font-face {
+    font-family: "Bitter";
+    src: url("/assets/fonts/bitter.ttf");
+    font-display: fallback;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("/assets/fonts/bitter-italic.ttf");
+    font-display: fallback;
+    font-style: italic;
+}
+
 body {
-    font-family: "Bitter", "", "Emoji";
+    font-family: "Bitter", serif, "Emoji";
     max-width: 9in;
     padding: 1.4em;
     margin: 1.4em auto;
@@ -149,6 +163,14 @@ figure {
         margin-top: 1em;
         font-style: italic;
         text-align: center;
+    }
+
+    &.math {
+        color: black;
+
+        .katex-display {
+            margin: 0;
+        }
     }
 }
 
