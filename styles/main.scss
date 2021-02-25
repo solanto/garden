@@ -80,6 +80,10 @@ article {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
 a {
     border-radius: $bg-corners;
     transition: 0.1s;
