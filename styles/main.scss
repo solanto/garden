@@ -87,7 +87,9 @@ a {
     border-radius: $bg-corners;
     transition: 0.1s;
     padding: 0.1em;
-    white-space: nowrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 
     &:hover {
         background-color: black;
