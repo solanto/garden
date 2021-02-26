@@ -1,0 +1,32 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/_site"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "11ty Serve",
+            "program": "${workspaceFolder}/node_modules/@11ty/eleventy/cmd.js",
+            "args": [
+                // Just an example argument
+                // "--output=C:\\Temp"
+                "--serve"
+            ],
+        }
+    ],
+    "compounds": [
+        {
+          "name": "11ty",
+          "configurations": ["11ty Serve", "Chrome"]
+        }
+    ]
+}

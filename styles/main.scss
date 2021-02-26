@@ -27,7 +27,6 @@ body {
     margin: 1.4em auto;
     margin-bottom: 0;
     background-color: #f5f4f2;
-    font-display: swap;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
 }
@@ -169,7 +168,7 @@ figure {
         text-align: center;
     }
 
-    &.math {
+    &.math, table {
         color: black;
 
         .katex-display {
@@ -205,6 +204,34 @@ pre {
     code {
         background-color: none;
         box-shadow: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+
+    th, td {
+        $corners: 0.1rem;
+        padding: 0.5rem;
+        border-right: 1px #edf2e9 solid;
+
+        &:first-child {
+            border-radius: $corners 0 0 $corners;
+        }
+
+        &:last-child {
+            border-radius: 0 $corners $corners 0;
+            border-right: none;
+        }
+    }
+
+    th, tr:nth-child(2n) td {
+        background-color: #edf2e9;
+        border-right: 1px white solid;
+
+        &:last-child {
+            border-right: none;
+        }
     }
 }
 

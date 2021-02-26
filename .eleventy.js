@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
-    
+    const environment = process.env.ELEVENTY_ENV;
+
     const markdownIt = require('markdown-it');
     const markdownItOptions = {
         html: true,
@@ -39,16 +40,32 @@ module.exports = function(eleventyConfig) {
         let n = Number(tokens[idx].meta.id + 1).toString();
       
         if (tokens[idx].meta.subId > 0) {
-          n += ":" + tokens[idx].meta.subId;
+            n += ":" + tokens[idx].meta.subId;
         }
       
         return n;
     };
 
+    md.renderer.rules.table_open = (tokens, idx, options, env, self) => (
+        `<figure>` + self.renderToken(tokens, idx, options)
+    );
+
+    md.renderer.rules.table_close = (tokens, idx, options, env, self) => (
+        self.renderToken(tokens, idx, options) + `</figure>`
+    );
+
     eleventyConfig.setLibrary("md", md);
 
     const pluginSass = require("eleventy-plugin-sass");
-    eleventyConfig.addPlugin(pluginSass);
+    let sassOptions;
+    if (environment == "production") {
+        sassOptions = {};
+    } else {
+        sassOptions = {
+            sourcemaps: true
+        };
+    }
+    eleventyConfig.addPlugin(pluginSass, sassOptions);
 
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
     eleventyConfig.addPlugin(syntaxHighlight, {

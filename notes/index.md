@@ -13,6 +13,6 @@ The garden's still in its early stages.
 
 ## all my plants
 
-*(these are links!)*
+These are links! They're listed by publish date, however, I'm always tending to my plants and updating pages as I go.
 
 {% include notes-list.html %}
