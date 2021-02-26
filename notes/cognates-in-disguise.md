@@ -15,7 +15,7 @@ Germanic tribes called the [Franks](https://en.wikipedia.org/wiki/Franks) brough
 
 This lends parallels like:
 
-| English                  | Swedish                     | French                                          |
+| english                  | swedish                     | french                                          |
 | ------------------------ | --------------------------- | ----------------------------------------------- |
 | waffle                   | våffel                      | gaufre                                          |
 | wait                     | vänta                       | guetter                                         |
