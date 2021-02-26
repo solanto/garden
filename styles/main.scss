@@ -79,7 +79,7 @@ article {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, th {
     font-weight: 500;
 }
 
@@ -209,11 +209,12 @@ pre {
 
 table {
     border-collapse: collapse;
+    $accent: #edf2e9;
 
     th, td {
         $corners: 0.1rem;
         padding: 0.5rem;
-        border-right: 1px #edf2e9 solid;
+        border-right: 1px $accent solid;
 
         &:first-child {
             border-radius: $corners 0 0 $corners;
@@ -226,11 +227,25 @@ table {
     }
 
     th, tr:nth-child(2n) td {
-        background-color: #edf2e9;
+        background-color: $accent;
         border-right: 1px white solid;
 
         &:last-child {
             border-right: none;
+        }
+    }
+
+    th {
+        background-color: darken(saturate($accent, 10%), 10%)
+    }
+
+    @media (orientation: portrait) {
+        font-size: 0.8em;
+
+        th, td {
+            $padding-block: 0.3rem;
+            padding-top: $padding-block;
+            padding-bottom: $padding-block;
         }
     }
 }
