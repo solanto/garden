@@ -1,6 +1,6 @@
 if (!("ontouchstart" in window)) {
     document.head.appendChild(html`
-        <link rel="stylesheet" href="/styles/intothegarden.css">
+        <link rel="stylesheet" href="/styles/into-the-garden.css">
     `);
 
     window.onload = () => {
