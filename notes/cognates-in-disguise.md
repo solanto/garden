@@ -25,9 +25,10 @@ This creates parallels like:
 | war                      | värre (worse)               | guerre                                          |
 | William                  | Vilhelm (slightly outdated) | Guillaume                                       |
 | ware (as in *warehouse*) | vara (like in English)      | gare (train station; a little like *warehouse*) |
-| ward                     | vård (protection)           | garder (keep)                                   |
+| ward                     | vård (protection)           | garder (keep)                                   
+| warn                     | varna                       | garnir (garnish)
 
-English later re-borrowed some words like *garder* from French to produce modern doublets like *ward* and *guard*. Many of the French borrowings like those above also made their ways into other romance languages; *gaufre* and *guerre* led to *gofre* and *guerra* in Spanish, among others.
+English later re-borrowed some words like *garder* from French to produce modern doublets like *ward* and *guard*, and *warn* and *garnish*. Many of the French borrowings like those above also made their ways into other romance languages; *gaufre* and *guerre* led to *gofre* and *guerra* in Spanish, among others.
 
 Apart from the joy I find in knowing that *waffle* is such a ubiquitous word, this also has a use for learners like me. When I don't know a word in Swedish that starts with *v* or a word in French that starts with hard *g*, I can start by replacing the beginning with *w* and asking myself which English word sounds similar.
 
