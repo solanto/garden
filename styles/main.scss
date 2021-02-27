@@ -207,6 +207,7 @@ pre {
 
 table {
     border-collapse: collapse;
+    min-width: 100%;
     $accent: #edf2e9;
 
     th, td {
@@ -238,7 +239,7 @@ table {
     }
 
     @media (orientation: portrait) {
-        font-size: 0.8em;
+        font-size: 0.9em;
 
         th, td {
             $padding-block: 0.3rem;
