@@ -20,6 +20,12 @@ $bg-corners: 0.3em;
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Fira Code";
+    src: local("Fira Code"), url("/assets/fonts/fira-code.woff2"), url("/assets/fonts/fira-code.woff");
+    font-display: fallback;
+}
+
 body {
     font-family: "Bitter", serif, "Emoji";
     max-width: 9in;
@@ -183,16 +189,11 @@ figure[data-type="image"] a:hover {
     background-color: inherit;
 }
 
-.footnote-ref a, .footnote-backref {
-    font-family: "Fira Code";
-}
-
-.footnote-item::marker {
-    font-family: "Fira Code";
+pre, code, .footnote-ref a, .footnote-backref, .footnote-item::marker {
+    font-family: "Fira Code", monospace;
 }
 
 pre, code {
-    font-family: "Fira Code";
     word-break: break-all;
     white-space: pre-wrap;
 }
