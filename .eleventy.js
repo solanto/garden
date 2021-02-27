@@ -13,7 +13,8 @@ module.exports = function(eleventyConfig) {
     .use(require('markdown-it-attrs'))
     .use(require('markdown-it-implicit-figures'), {
         figcaption: true,
-        link: true
+        link: true,
+        dataType: true
     })
     .use(require('markdown-it-for-inline'), 'url_new_win', 'link_open', function(tokens, idx) {
         const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href');

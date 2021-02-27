@@ -152,16 +152,6 @@ figure {
             max-height: inherit;
             filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
         }
-
-        &, &.external {
-            &::before { content: none }
-            &::after { content: none }
-
-            &:hover {
-                color: inherit;
-                background-color: inherit;
-            }
-        }
     }
 
     figcaption {
@@ -183,9 +173,14 @@ figure {
     padding-inline-start: 2em;
 }
 
-.footnote-ref a, .footnote-backref, .no-decor {
+.footnote-ref a, .footnote-backref, .no-decor, figure[data-type="image"] a {
     &::before { content: none }
     &::after { content: none }
+}
+
+figure[data-type="image"] a:hover {
+    color: inherit;
+    background-color: inherit;
 }
 
 .footnote-ref a, .footnote-backref {
