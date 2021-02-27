@@ -71,28 +71,12 @@ header {
     }
 }
 
-article {
-    margin: 1em 0;
-
-    a {
-        &::before { content: "{" }
-        &::after { content: "}" }
-    }
-
-    .external {
-        &::before { content: "[" }
-        &::after { content: "]" }
-    }
-}
-
-h1, h2, h3, h4, h5, h6, th {
-    font-weight: 500;
-}
+$link-padding: 0.1em;
 
 a {
     border-radius: $bg-corners;
     transition: 0.1s;
-    padding: 0.1em;
+    padding: $link-padding;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -101,6 +85,27 @@ a {
         background-color: black;
         color: white;
     }
+}
+
+article {
+    margin: 1em 0;
+
+    a {
+        &::before { content: "{" }
+        &::after { content: "}" }
+
+        margin-left: -$link-padding;
+        margin-right: -$link-padding;
+    }
+
+    a .external {
+        &::before { content: "[" }
+        &::after { content: "]" }
+    }
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: 500;
 }
 
 main {
