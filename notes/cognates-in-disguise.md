@@ -18,15 +18,16 @@ While older forms of Vulgar Latin might have had *w*, now-France (*Gaul*) eventu
 
 This creates parallels like:
 
-| english                  | swedish                     | french                                          |
-| ------------------------ | --------------------------- | ----------------------------------------------- |
-| waffle                   | våffel                      | gaufre                                          |
-| wait                     | vänta                       | guetter                                         |
-| war                      | värre (worse)               | guerre                                          |
-| William                  | Vilhelm (slightly outdated) | Guillaume                                       |
-| ware (as in *warehouse*) | vara (like in English)      | gare (train station; a little like *warehouse*) |
-| ward                     | vård (protection)           | garder (keep)                                   
-| warn                     | varna                       | garnir (garnish)
+| english                   | swedish                         | french                                          |
+| ---------------------     | ------------------------        | ----------------------------------------------- |
+| waffle                    | våffel                          | gaufre                                          |
+| wait                      | vänta                           | guetter                                         |
+| war                       | värre (worse)                   | guerre                                          |
+| William                   | Vilhelm (slightly outdated)     | Guillaume                                       |
+| ware (as in *warehouse*)  | vara (like in English)          | gare (train station; a little like *warehouse*) |
+| ward                      | vård (protection)               | garder (keep)                                   |
+| warn                      | varna                           | garnir (garnish)                                |
+| walk (originally to roll) | valka (to process & roll cloth) | gauche (left; this one is [weird](en.wiktionary.org/wiki/gauche#Etymology_2)) |
 
 English later re-borrowed some words like *garder* from French to produce modern doublets like *ward* and *guard*, and *warn* and *garnish*. Many of the French borrowings like those above also made their ways into other romance languages; *gaufre* and *guerre* led to *gofre* and *guerra* in Spanish, among others.
 
