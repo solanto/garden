@@ -23,6 +23,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 - Bloom (Kevin Panetta & Savanna Ganucheau)
 - The Fire Never Goes Out (Noelle Stevenson)
 - Beautiful Darkness (Fabien Vehlmann & Kerascoët)
+    - also, its original French version: Jolies Ténèbres
 - Out of The Blue (Ari; ongoing)
   - [tapas](https://tapas.io/series/OutoftheBlue) has the newest episodes, but the first few episodes on tapas have a different art style from the rest of the comic. Those first few pages have been redrawn and posted to [WEBTOON](https://www.webtoons.com/en/challenge/out-of-the-blue/list?title_no=192270&page=1).
 
