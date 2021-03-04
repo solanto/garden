@@ -37,13 +37,13 @@ This is my American kitchen adaptation of a great [gluten-free recipe](https://w
 
 ### dries
 
-- 350g gluten free flour
+- 350g gluten-free flour
   
   - I've had success with the Bob's Red Mill All-Purpose blend of rice flour & tapioca flour.
   
-  - You might need more! Gluten free flours vary, a lot.
+  - You might need more! Gluten-free flours vary, a lot.
   
-  - I listed this in mass units instead of volume units because I don't like measuring out flour. Bags of gluten free flour are usually small and mass-labeled, so we can just divide the bag's contents visually instead of measuring. If your bag says 624g, just pour out slightly over half to get 350g.
+  - I listed this in mass units instead of volume units because I don't like measuring out flour. Bags of gluten-free flour are usually small and mass-labeled, so we can just divide the bag's contents visually instead of measuring. If your bag says 624g, just pour out slightly over half to get 350g.
 
 - 1/2 cup almond flour
 
@@ -75,7 +75,7 @@ This is my American kitchen adaptation of a great [gluten-free recipe](https://w
 
 3. In a small bowl or cup, dissolve the saffron and cardamom in about a teaspoon of hot water. Add this to the milk mixture.
 
-4. Set aside about 1/3 cup of the gluten free flour for when you work the dough.
+4. Set aside about 1/3 cup of the gluten-free flour for when you work the dough.
 
 5. In a new bowl, thoroughly mix all of the remaining dry ingredients.
 
