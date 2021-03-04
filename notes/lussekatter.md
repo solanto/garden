@@ -9,7 +9,7 @@ Whether you're in for *lussekatter*, *lussebullar*, or plain old saffron buns, t
 
 How easy? First-try easy, in my experience. How good? Make some and find out!
 
-![[photo](https://commons.wikimedia.org/wiki/File:2005_baking_of_saffron_buns_03.jpg) by Tomhe / CC BY](/assets/recipes/lussekatter.jpg)
+![[photo](https://commons.wikimedia.org/wiki/File:2005_baking_of_saffron_buns_03.jpg) by Tomhe / CC BY; these are traditional buns, but my results have been basically identical in taste and texture!](/assets/recipes/lussekatter.jpg)
 
 This is my American kitchen adaptation of a great [gluten-free recipe](https://www.arla.se/recept/glutenfria-lussekatter/) from the Arla Foods dairy company. It’ll probably work out for normal, gluten-laden flour without xanthan gum, but traditional recipes should cover that better, anyway!
 
