@@ -161,12 +161,12 @@ figure {
     a, div {
         max-height: 4in;
         text-align: center;
+    }
 
-        img {
-            max-width: 100%;
-            max-height: inherit;
-            filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
-        }
+    img, iframe {
+        max-width: 100%;
+        max-height: inherit;
+        filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
     }
 
     figcaption {
@@ -183,6 +183,11 @@ figure {
             margin: 0;
         }
     }
+}
+
+blockquote {
+    font-size: 1.3em;
+    font-style: italic;
 }
 
 .footnotes-list {
