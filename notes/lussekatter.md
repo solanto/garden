@@ -89,7 +89,7 @@ Makes eighteen medium buns.
 
 7. Cover the dough and let it rise for 30 min.
 
-8. Lightly a work surface with a little bit of the flour you set aside and turn the dough out onto it.
+8. Lightly dust a work surface with a little bit of the flour you set aside and turn the dough out onto it.
    
    - If the dough is *still* too sticky, you can work a little bit more flour in here. But be kind to your just-risen dough!
 
