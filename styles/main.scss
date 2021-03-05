@@ -73,7 +73,7 @@ header {
 
 $link-padding: 0.1em;
 
-a {
+a, figure[data-type=image] figcaption a {
     border-radius: $bg-corners;
     transition: 0.1s;
     padding: $link-padding;
@@ -90,7 +90,7 @@ a {
 article {
     margin: 1em 0;
 
-    a {
+    a, figure[data-type=image] figcaption a {
         &::before { content: "{" }
         &::after { content: "}" }
 
@@ -98,7 +98,7 @@ article {
         margin-right: -$link-padding;
     }
 
-    a .external {
+    a.external, figure[data-type=image] figcaption a.external {
         &::before { content: "[" }
         &::after { content: "]" }
     }
@@ -127,6 +127,10 @@ footer {
     margin-bottom: 1em;
 }
 
+ul li p {
+    margin: 0;
+}
+
 hr {
     border: none;
     border-top: 1pt solid #575f66;
@@ -136,7 +140,7 @@ hr {
 figure, pre, code {
     border-radius: $bg-corners;
     background-color: #FAFAFA;
-    color: #575f66;
+    color: darken(#575f66, 10%);
     box-shadow: 0 0 0.5in transparentize(#575f66, 0.97);
 }
 
@@ -169,6 +173,7 @@ figure {
         margin-top: 1em;
         font-style: italic;
         text-align: center;
+        font-size: 0.90em;
     }
 
     &.math, table {
