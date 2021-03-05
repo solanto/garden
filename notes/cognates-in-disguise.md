@@ -1,12 +1,14 @@
 ---
 date: 2021-02-25
 title: cognates in disguise
-modified: 2021-02-28
+modified: 2021-03-04
 ---
 
 # cognates in disguise
 
 One of my favorite, nerdiest pastimes is comparing related words, or [cognates](https://en.wikipedia.org/wiki/Cognate), across languages. Sometimes, though, cognates aren't so easy to recognize.
+
+For further reading on any of these, [Wiktionary](https://en.wiktionary.org/) is a great resource!
 
 ## w, v, and... g?
 
@@ -32,6 +34,20 @@ This creates parallels like:
 English later re-borrowed some words like *garder* and *garnir* from French to produce modern doublets like *ward* and *guard*, and *warn* and *garnish*. Many of the French borrowings like those above also made their ways into other romance languages; *gaufre* and *guerre* led to *gofre* and *guerra* in Spanish, among others.
 
 Apart from the joy I find in knowing that *waffle* is such a ubiquitous word, this also has a use for learners like me. When I don't know a word in Swedish that starts with *v* or a word in French that starts with hard *g*, I can start by replacing the beginning with *w* and asking myself which English word sounds similar.
+
+## exhalation and *animal*
+
+The Proto-Indo-Europeans described many things with [onomatopoeias](https://en.wikipedia.org/wiki/Onomatopoeia). Not all animals quack or moo, certainly—but all animals breathe. The sound for breathing eventually developed into a word for living, moving things.
+
+Crudely, the major steps of the word's development are:
+
+> hhhhh →&nbsp;hhhnms →&nbsp;anamos →&nbsp;animus →&nbsp;animal
+
+I made a fun presentation on this word for some friends. I like to highlight how silly something like etymology can be.
+
+<figure>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQB_rtSMfLU1c5Iu9hkopZy7Cuk-QPejz5C3MW5GSphTPR9VYbE29v0dhL1eVETKEU2ofteUDvR8e-C/embed?start=false&loop=false&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy" width="800px" height="479px"></iframe>
+</figure>
 
 [^1]: en.wikipedia.org/wiki/Frankish_language#Old_French
 
