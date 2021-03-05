@@ -13,6 +13,8 @@ How easy? First-try easy, in my experience. How good? Make some and find out!
 
 This is my American kitchen adaptation of a great [gluten-free recipe](https://www.arla.se/recept/glutenfria-lussekatter/) from the Arla Foods dairy company. It’ll probably work out for normal, gluten-laden flour without xanthan gum, but traditional recipes should cover that better, anyway!
 
+Makes eighteen medium buns.
+
 ## ingredients
 
 ### wets
