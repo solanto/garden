@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
         html: true,
         linkify: true,
         typographer: true
-    };
+    }
     
     const md = markdownIt(markdownItOptions)
     .use(require('markdown-it-footnote'))
@@ -37,7 +37,9 @@ module.exports = function(eleventyConfig) {
         })
     })
 
-    md.renderer.rules.footnote_caption = (tokens, idx) => {
+    const mdr = md.renderer.rules;
+
+    mdr.footnote_caption = (tokens, idx) => {
         let n = Number(tokens[idx].meta.id + 1).toString();
       
         if (tokens[idx].meta.subId > 0) {
@@ -45,15 +47,15 @@ module.exports = function(eleventyConfig) {
         }
       
         return n;
-    };
+    }
 
-    md.renderer.rules.table_open = md.renderer.rules.blockquote_open = (tokens, idx, options, env, self) => (
+    mdr.table_open = mdr.blockquote_open = (tokens, idx, options, env, self) => (
         `<figure>` + self.renderToken(tokens, idx, options)
-    );
+    )
 
-    md.renderer.rules.table_close = md.renderer.rules.blockquote_close = (tokens, idx, options, env, self) => (
+    mdr.table_close = mdr.blockquote_close = (tokens, idx, options, env, self) => (
         self.renderToken(tokens, idx, options) + `</figure>`
-    );
+    )
 
     eleventyConfig.setLibrary("md", md);
 
@@ -64,7 +66,7 @@ module.exports = function(eleventyConfig) {
     } else {
         sassOptions = {
             sourcemaps: true
-        };
+        }
     }
     eleventyConfig.addPlugin(pluginSass, sassOptions);
 
@@ -96,18 +98,18 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLiquidFilter("shortutc", date => {
         const utc = date.toUTCString();
         return moment.utc(utc).format("D MMM. YYYY");
-    });
+    })
 
     const katex = require("katex");
 
     eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {
         throwOnError: true,
-    }));
+    }))
 
     eleventyConfig.addPairedShortcode("mathd", latex => '<figure class="math">' + katex.renderToString(latex, {
         throwOnError: true,
         displayMode: true,
-    }) + "</figure>");
+    }) + "</figure>")
 
     return {
         useGitIgnore: false,
