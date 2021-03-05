@@ -41,17 +41,17 @@ module.exports = function(eleventyConfig) {
         let n = Number(tokens[idx].meta.id + 1).toString();
       
         if (tokens[idx].meta.subId > 0) {
-            n += ":" + tokens[idx].meta.subId;
+            n += ":" + (tokens[idx].meta.subId + 1);
         }
       
         return n;
     };
 
-    md.renderer.rules.table_open = (tokens, idx, options, env, self) => (
+    md.renderer.rules.table_open = md.renderer.rules.blockquote_open = (tokens, idx, options, env, self) => (
         `<figure>` + self.renderToken(tokens, idx, options)
     );
 
-    md.renderer.rules.table_close = (tokens, idx, options, env, self) => (
+    md.renderer.rules.table_close = md.renderer.rules.blockquote_close = (tokens, idx, options, env, self) => (
         self.renderToken(tokens, idx, options) + `</figure>`
     );
 
