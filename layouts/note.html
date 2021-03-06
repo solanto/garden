@@ -15,7 +15,11 @@ nav:
     <section class="note-details">
         <p class="page-date">
             {{ page.date | shortutc | downcase }} /
-            {% if modified %} edited {{ modified | shortutc | downcase }} /{% endif %}
+            {% if modified %}
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/solanto/garden/commits/main{{ page.filePathStem }}.md">
+                edited {{ modified | shortutc | downcase }}
+            </a> /
+            {% endif %}
             <!--space->--> <!--<-space-->
             {% include backlinks.html %}
         </p>
