@@ -1,7 +1,7 @@
 ---
 title: design philosophy
-scripts: textify-demo
 date: 2021-02-20
+modified: 2021-03-06
 ---
 
 # design philosophy
@@ -18,7 +18,9 @@ Scripted elements load when it makes sense. JavaScript hot-swaps static parts of
 
 Important content uses well-supported browser features.[^1] Flourishes can deviate, as long as they don’t interfere with the content.
 
-This all guarantees text-only access to the site.[^2]
+This all guarantees text-only access to the site.[^2]<sup>,</sup>[^3]
 
 [^1]: This does not mean I will be kind to [Internet Explorer](https://www.zdnet.com/article/microsoft-security-chief-ie-is-not-a-browser-so-stop-using-it-as-your-default/) users. Please get a better browser.
-[^2]: Want to test this on a normal browser? Click <a href="javascript:(function()%7B(()%3D%3E%7Blet%20w%3Dwindow.open(%22%22)%3Bfetch(window.location.href).then(r%3D%3Er.text().then(t%3D%3Ew.document.body.outerHTML%3Dt.replace(RegExp(%60%3Clink(.%7C%5Cn)*%3F%3E%7C%3Cscript(.%7C%5Cn)*%3F%3E(.%7C%5Cn)*%3F%3C%5C%2Fscript%3E%60%2C%22g%22)%2C%22%22).replace(RegExp(%60((src%7Chref)%3D%22)%5C%2F%3F((%3F!http).*%3F)%22%60%2C%22g%22)%2C%22%241%22%2Bwindow.location.origin%2B'%2F%243%22')))%7D)()%7D)()">textify</a>! If you're on a desktop computer, bring the tool wherever you go by dragging it into your bookmarks bar. It should work on most pages.
+[^2]: Want to test this on a normal browser? Click [textify](https://results-v3-secure.w3dt.net/anon/016dFCsXWMCIV4NARMQR636623)! You can view other webpages in text-only mode using [textbrowser](https://w3dt.net/tools/textbrowser) in your browser or by installing a local text-only browser like [elinks](http://elinks.or.cz/index.html).
+
+[^3]: As of  early March, 2021, this has one big catch: images! I switched to [eleventy-plugin-lazyimages](https://github.com/liamfiddler/eleventy-plugin-lazyimages) to improve loading times on pages with images, but it doesn't support scriptless browsers just yet. It should [very soon](https://github.com/liamfiddler/eleventy-plugin-lazyimages/pull/43), though!
