@@ -6,7 +6,7 @@ modified: 2021-03-05
 
 # lussekatter for the californian
 
-Whether you're in for *lussekatter*, *lussebullar*, or plain old saffron buns, this gluten-free rendition of the Swedish classic is simple and hits the spot.
+Whether you're in for *lussekatter*, *lussebullar*, or plain old saffron buns, this [[ncgs|gluten-free]] rendition of the Swedish classic is simple and hits the spot.
 
 How easy? First-try easy, in my experience. How good? Make some and find out!
 

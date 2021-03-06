@@ -1,9 +1,12 @@
 ---
 date: 2021-03-04
 title: is gluten the culprit?
+modified: 2021-03-06
 ---
 
 ## preface
+
+This is a research summary about non-celiac gluten sensitivity (also known as *wheat sensitivity* or *gluten sensitivity*), its causes, and the accuracy of its name.
 
 I wrote this in my senior year of high school, in 2019. I wasn't and am still not a medical expert, but I have been diagnosed with NCGS myself (as well as lactose intolerance, which is mentioned later). Some of my claims may be a little haughty, and my writing was definitely fluffier then. It's a bit of a text wall. I'm also unsure whether the statistical relationships I drew are really valid. Regardless, I learned more writing this essay than any other to date. 
 
