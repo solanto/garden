@@ -60,15 +60,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", md);
 
     const pluginSass = require("eleventy-plugin-sass");
-    let sassOptions;
+    let sassOptions = {};
     if (environment != "production") {
         sassOptions = {
             sourcemaps: true
-        }
-    } else {
-        sassOptions = {
-            // watch: ["styles/*.{scss,sass}", "!styles/core.scss"]
-            // TODO: exclude core.scss in both staging & production
         }
     }
     eleventyConfig.addPlugin(pluginSass, sassOptions);
