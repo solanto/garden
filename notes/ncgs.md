@@ -46,4 +46,4 @@ Despite NCGS’ apparent rise in popularity among self-diagnoses and gluten-free
 
 [^10]: Skodje GI, Sarna VK, Minelle IH, Rolfsen KL, Muir JG, Gibson PR, Veierød MB, Henriksen C, Lundin KEA. Fructan, rather than gluten, induces symptoms in patients with self-reported non-celiac gluten sensitivity. Gastro (2nd Ed.) [Internet]. 2018 Feb [cited 2019 Nov 20];154(3):529-539. Available from: <https://www.gastrojournal.org/article/S0016-5085%2817%2936302-3/fulltext> doi:<https://doi.org/10.1053/j.gastro.2017.10.040>.
 
-[^11]: Johnson DE. Crossover experiments [abstract]. WIREs Comp Stats [Internet]. In: Wiley Online Library [database on the Internet]. 2010 Sep 8 [cited 2019 Nov 20];2(5):620-625. Available from:<https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.109)>doi:https://doi.org/10.1002/wics.109.
+[^11]: Johnson DE. Crossover experiments [abstract]. WIREs Comp Stats [Internet]. In: Wiley Online Library [database on the Internet]. 2010 Sep 8 [cited 2019 Nov 20];2(5):620-625. Available from:<https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.109)> doi:<https://doi.org/10.1002/wics.109>.
