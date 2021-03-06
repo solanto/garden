@@ -164,10 +164,10 @@ figure {
     }
 
     img, iframe {
-        width: auto;
-        height: auto;
         max-width: 100%;
         max-height: inherit;
+        width: auto;
+        height: auto;
         filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
     }
 
