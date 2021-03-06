@@ -1,6 +1,7 @@
 ---
 layout: home
 icon: ⛩️
+scripts: [html, into-the-garden]
 ---
 # hello, there.
 
