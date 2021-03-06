@@ -165,6 +165,7 @@ figure {
 
     img, iframe {
         max-width: 100%;
+        width: auto;
         max-height: inherit;
         filter: drop-shadow(0 0 0.1in transparentize(#575f66, 0.8));
     }

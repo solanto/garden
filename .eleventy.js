@@ -94,6 +94,12 @@ module.exports = function(eleventyConfig) {
 
     const criticalCss = require("eleventy-critical-css");
     eleventyConfig.addPlugin(criticalCss, {minify: true});
+
+    const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+    eleventyConfig.addPlugin(lazyImagesPlugin, {
+        imgSelector: "figure img",
+        preferNativeLazyLoad: true
+    })
     
     eleventyConfig.addCollection("notes", collection => collection.getFilteredByGlob(["notes/**/*.md", "index.md"]));
     
