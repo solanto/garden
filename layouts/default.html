@@ -6,6 +6,18 @@ icon: 🌱
 <html lang="en">
 <head>
     {% include head.html %}
+    {% for stylesheet in styles %}
+        {% if stylesheet == "katex" %}
+        <link rel="stylesheet" >
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+        </noscript>
+        {% else %}
+            {% assign stylepath = stylesheet | prepend: '"/styles/' | append: '.css"' %}
+            {% style stylepath %}
+        {% endif %}
+    {% endfor %}
 </head>
 <body class="bitter-onum">
     {% include page-header.html %}

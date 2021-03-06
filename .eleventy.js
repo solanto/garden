@@ -61,11 +61,14 @@ module.exports = function(eleventyConfig) {
 
     const pluginSass = require("eleventy-plugin-sass");
     let sassOptions;
-    if (environment == "production") {
-        sassOptions = {};
-    } else {
+    if (environment != "production") {
         sassOptions = {
             sourcemaps: true
+        }
+    } else {
+        sassOptions = {
+            // watch: ["styles/*.{scss,sass}", "!styles/core.scss"]
+            // TODO: exclude core.scss in both staging & production
         }
     }
     eleventyConfig.addPlugin(pluginSass, sassOptions);
@@ -87,7 +90,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
     const typographyPlugin = require("@jamshop/eleventy-plugin-typography");
-    eleventyConfig.addPlugin(typographyPlugin); 
+    eleventyConfig.addPlugin(typographyPlugin);
+
+    const criticalCss = require("eleventy-critical-css");
+    eleventyConfig.addPlugin(criticalCss, {minify: true});
     
     eleventyConfig.addCollection("notes", collection => collection.getFilteredByGlob(["notes/**/*.md", "index.md"]));
     
@@ -101,15 +107,22 @@ module.exports = function(eleventyConfig) {
     })
 
     const katex = require("katex");
+    eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {throwOnError: true}));
+    eleventyConfig.addPairedShortcode("mathd", latex => `
+        <figure class="math">
+            ${katex.renderToString(latex, {
+                throwOnError: true,
+                displayMode: true,
+            })}
+        </figure>
+    `)
 
-    eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {
-        throwOnError: true,
-    }))
-
-    eleventyConfig.addPairedShortcode("mathd", latex => '<figure class="math">' + katex.renderToString(latex, {
-        throwOnError: true,
-        displayMode: true,
-    }) + "</figure>")
+    eleventyConfig.addShortcode("style", href => `
+        <link rel="preload" href=${href} as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href=${href}>
+        </noscript>
+    `)
 
     return {
         useGitIgnore: false,

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
+    "eleventy-critical-css": "^0.2.2",
     "eleventy-plugin-sass": "^1.1.1",
     "js-yaml": "^4.0.0",
     "katex": "^0.12.0",
