@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
     const environment = process.env.ELEVENTY_ENV;
+    const production = environment == "production";
 
     const markdownIt = require('markdown-it');
     const markdownItOptions = {
@@ -61,7 +62,7 @@ module.exports = function(eleventyConfig) {
 
     const pluginSass = require("eleventy-plugin-sass");
     let sassOptions = {};
-    if (environment != "production") {
+    if (!production) {
         sassOptions = {
             sourcemaps: true
         }
@@ -88,7 +89,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(typographyPlugin);
 
     const criticalCss = require("eleventy-critical-css");
-    eleventyConfig.addPlugin(criticalCss, {minify: true});
+    if (production) {
+        eleventyConfig.addPlugin(criticalCss, {
+            minify: true,
+            ignore: {
+                atrule: ["@font-face"],
+                decl: (node, value) => /url\(/.test(value)
+            }
+        })
+    }
 
     const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
     eleventyConfig.addPlugin(lazyImagesPlugin, {
