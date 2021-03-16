@@ -100,10 +100,10 @@ module.exports = function(eleventyConfig) {
     }
 
     const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-    eleventyConfig.addPlugin(lazyImagesPlugin, {
-        imgSelector: "figure img",
-        preferNativeLazyLoad: true
-    })
+    // eleventyConfig.addPlugin(lazyImagesPlugin, {
+    //     imgSelector: "figure img",
+    //     preferNativeLazyLoad: true
+    // })
     
     eleventyConfig.addCollection("notes", collection => collection.getFilteredByGlob(["notes/**/*.md", "index.md"]));
     
