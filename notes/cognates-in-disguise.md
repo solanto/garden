@@ -22,7 +22,7 @@ This creates parallels like:
 
 | english                   | swedish                         | french                                          |
 | ------------------------- | ------------------------------- | ----------------------------------------------- |
-| waffle                    | våffel                          | gaufre                                          |
+| waffle                    | våffla                          | gaufre                                          |
 | wait                      | vänta                           | guetter                                         |
 | war                       | värre (worse)                   | guerre                                          |
 | William                   | Vilhelm (slightly outdated)     | Guillaume                                       |
