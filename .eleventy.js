@@ -1,8 +1,8 @@
-module.exports = function(eleventyConfig) {
+module.exports = eleventyConfig => {
     const environment = process.env.ELEVENTY_ENV;
     const production = environment == "production";
 
-    const markdownIt = require('markdown-it');
+    const markdownIt = require("markdown-it");
     const markdownItOptions = {
         html: true,
         linkify: true,
@@ -10,22 +10,22 @@ module.exports = function(eleventyConfig) {
     }
     
     const md = markdownIt(markdownItOptions)
-    .use(require('markdown-it-footnote'))
-    .use(require('markdown-it-attrs'))
-    .use(require('markdown-it-implicit-figures'), {
+    .use(require("markdown-it-footnote"))
+    .use(require("markdown-it-attrs"))
+    .use(require("markdown-it-implicit-figures"), {
         figcaption: true,
         link: true,
         dataType: true
     })
-    .use(require('markdown-it-for-inline'), 'url_new_win', 'link_open', function(tokens, idx) {
-        const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href');
-        if (href && !href.startsWith('/') && !href.startsWith('#')) {
-            tokens[idx].attrPush(['class', 'external']);
-            tokens[idx].attrPush(['target', '_blank']);
-            tokens[idx].attrPush(['rel', 'noopener noreferrer']);
+    .use(require("markdown-it-for-inline"), "url_new_win", "link_open", (tokens, idx) => {
+        const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === "href");
+        if (href && !href.startsWith('/') && !href.startsWith("#")) {
+            tokens[idx].attrPush(["class", "external"]);
+            tokens[idx].attrPush(["target", "_blank"]);
+            tokens[idx].attrPush(["rel", "noopener noreferrer"]);
         }
     })
-    .use(function(md) {
+    .use(md => {
         // Recognize Mediawiki links ([[text]])
         md.linkify.add("[[", {
             validate: /^\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/,
@@ -50,11 +50,11 @@ module.exports = function(eleventyConfig) {
         return n;
     }
 
-    mdr.table_open = mdr.blockquote_open = (tokens, idx, options, env, self) => (
+    mdr.table_open = mdr.blockquote_open = (tokens, idx, options, env, self) => ( /*html*/
         `<figure>` + self.renderToken(tokens, idx, options)
     )
 
-    mdr.table_close = mdr.blockquote_close = (tokens, idx, options, env, self) => (
+    mdr.table_close = mdr.blockquote_close = (tokens, idx, options, env, self) => ( /*html*/
         self.renderToken(tokens, idx, options) + `</figure>`
     )
 
@@ -99,7 +99,7 @@ module.exports = function(eleventyConfig) {
         })
     }
 
-    const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+    // const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
     // eleventyConfig.addPlugin(lazyImagesPlugin, {
     //     imgSelector: "figure img",
     //     preferNativeLazyLoad: true
@@ -115,7 +115,7 @@ module.exports = function(eleventyConfig) {
 
     const katex = require("katex");
     eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {throwOnError: true}));
-    eleventyConfig.addPairedShortcode("mathd", latex => `
+    eleventyConfig.addPairedShortcode("mathd", latex => /*html*/ `
         <figure class="math">
             ${katex.renderToString(latex, {
                 throwOnError: true,
@@ -124,7 +124,7 @@ module.exports = function(eleventyConfig) {
         </figure>
     `)
 
-    eleventyConfig.addShortcode("style", href => `
+    eleventyConfig.addShortcode("style", href => /*html*/ `
         <link rel="preload" href=${href} as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript>
             <link rel="stylesheet" href=${href}>
