@@ -4,8 +4,8 @@ module.exports = eleventyConfig => {
 
     const markdownIt = require("markdown-it");
     const markdownItOptions = {
-        html: true,
-        linkify: true,
+        html       : true,
+        linkify    : true,
         typographer: true
     }
     
@@ -14,8 +14,8 @@ module.exports = eleventyConfig => {
     .use(require("markdown-it-attrs"))
     .use(require("markdown-it-implicit-figures"), {
         figcaption: true,
-        link: true,
-        dataType: true
+        link      : true,
+        dataType  : true
     })
     .use(require("markdown-it-for-inline"), "url_new_win", "link_open", (tokens, idx) => {
         const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === "href");
@@ -94,7 +94,7 @@ module.exports = eleventyConfig => {
             minify: true,
             ignore: {
                 atrule: ["@font-face"],
-                decl: (node, value) => /url\(/.test(value)
+                decl  : (node, value) => /url\(/.test(value)
             }
         })
     }
@@ -134,11 +134,11 @@ module.exports = eleventyConfig => {
     return {
         useGitIgnore: false,
         dir: {
-            input: "./",
-            output: "_site",
-            layouts: "layouts",
+            input   : "./",
+            output  : "_site",
+            layouts : "layouts",
             includes: "includes",
-            data: "data"
+            data    : "data"
         },
         passthroughFileCopy: true
     }
