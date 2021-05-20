@@ -120,4 +120,4 @@ I'm no master baker; I'm always convinced I've made some fatal flaw, and that th
 
 ---
 
-P.S.: Svenska kokboksmått är så... unika. 😅 Men jag använder Amerikanska kokboksmått, så jag får inte kritisera!
+P.S.: Svenska kokboksmått är så... unika. 😅 Men jag använder amerikanska kokboksmått, så jag får inte kritisera!
