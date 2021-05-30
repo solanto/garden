@@ -5,7 +5,7 @@ date: 2021-02-23
 
 # media to consume
 
-This is some of the media I’ve most enjoyed, am currently consuming, would recommend, or want to know better in the future. I've sprinkled in some of my favorite quotes, as well.
+This is some of the media I’ve most enjoyed, am currently consuming, would recommend, or want to know better in the future. I've sprinkled in some of my favorite quotes, as well. I've kept most of these recommendations informative, wholesome, or "essential" in my mind (for now).
 
 ## books
 
@@ -56,7 +56,9 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
     - Howl’s Moving Castle
     - Spirited Away
     - My Neighbor Totoro
-- Arrival
+    - Ponyo
+    - From Up on Poppy Hill
+    - Castle in the Sky
 
 ## youtube channels
 
