@@ -1,6 +1,8 @@
 const { titleCase } = require("title-case");
 const fetch = require("node-fetch");
+const { Headers } = require("node-fetch");
 const moment = require("moment");
+const garden = require("../data/garden");
 
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g
@@ -53,8 +55,9 @@ module.exports = {
             return backlinks;
         },
         async modified(data) {
-            const githubData = (await fetch(`https://api.github.com/repos/solanto/garden/commits?path=notes%2F${data.filename}&page=1&per_page=1`)
-                .then(result => result.json()))[0]
+            const githubData = (await fetch(`https://api.github.com/repos/solanto/garden/commits?path=notes%2F${data.filename}&page=1&per_page=1`, {
+                headers: new Headers({ "Authorization": "token " + garden.githubToken })
+            }).then(result => result.json()))[0]
 
             const modified = githubData.commit.committer.date;
 
