@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .socials {
     $size: 1.7em;
     $padding: 0.15em;
@@ -8,7 +10,7 @@
     a {
         height: inherit;
         text-decoration: none;
-        margin-right: $size / 4 - $padding;
+        margin-right: math.div($size, 4) - $padding;
         padding: $padding;
         display: inline-block;
 

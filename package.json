@@ -23,6 +23,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "eleventy-plugin-lazyimages": "^2.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "markdown-it": "^12.0.4",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-footnote": "^3.0.2",
@@ -31,12 +32,15 @@
   "dependencies": {
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eleventy-critical-css": "^0.2.2",
-    "eleventy-plugin-sass": "^1.1.1",
+    "gulp": "^4.0.2",
+    "gulp-run-command": "^0.0.10",
+    "gulp-sass": "^4.1.0",
     "js-yaml": "^4.0.0",
     "katex": "^0.12.0",
     "markdown-it-for-inline": "^0.1.1",
     "markdown-it-implicit-figures": "^0.10.0",
     "moment": "^2.29.1",
+    "sass": "^1.34.0",
     "sharp": "^0.27.2"
   }
 }

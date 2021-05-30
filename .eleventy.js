@@ -60,15 +60,6 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.setLibrary("md", md);
 
-    const pluginSass = require("eleventy-plugin-sass");
-    let sassOptions = {};
-    if (!production) {
-        sassOptions = {
-            sourcemaps: true
-        }
-    }
-    eleventyConfig.addPlugin(pluginSass, sassOptions);
-
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
     eleventyConfig.addPlugin(syntaxHighlight, {
         alwaysWrapLineHighlights: true
@@ -89,7 +80,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPlugin(typographyPlugin);
 
     const criticalCss = require("eleventy-critical-css");
-    if (production) {
+    if (true) {
         eleventyConfig.addPlugin(criticalCss, {
             minify: true,
             ignore: {
