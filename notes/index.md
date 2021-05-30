@@ -15,4 +15,4 @@ The garden's still in its early stages.
 
 These are links! They're listed by publish date, however, I'm always tending to my plants and updating pages as I go.
 
-{% include notes-list.html %}
+{% include notes-list %}

@@ -6,7 +6,7 @@ icon: 🌱
 <html lang="en">
 <head>
     <title>{{ title }}</title>
-    {% include head.html %}
+    {% include head %}
     {% for stylesheet in styles %}
         {% if stylesheet == "katex" %}
         <link rel="stylesheet" >
@@ -21,11 +21,11 @@ icon: 🌱
     {% endfor %}
 </head>
 <body class="bitter-onum">
-    {% include page-header.html %}
+    {% include page-header %}
     {{ content | nl2b | typogrify | safe }}
     <hr>
     <footer class="footer">
-    {% include socials.html %}
+    {% include socials %}
     </footer>
 </body>
 {% for script in scripts %}

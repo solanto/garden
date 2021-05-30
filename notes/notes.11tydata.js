@@ -12,7 +12,7 @@ function caselessCompare(a, b) {
 }
 
 module.exports = {
-    layout: "note.html",
+    layout: "note",
     type: "note",
     tags: "note",
     eleventyComputed: {
