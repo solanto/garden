@@ -1,4 +1,6 @@
-const {titleCase} = require("title-case");
+const { titleCase } = require("title-case");
+const fetch = require("node-fetch");
+const moment = require("moment");
 
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g
@@ -12,8 +14,9 @@ module.exports = {
     type: "note",
     tags: "note",
     eleventyComputed: {
+        filename: data => data.page.inputPath.match(/(?!\/)[^\/]+$/)[0],
         title: data => titleCase(data.title || data.page.fileSlug),
-        backlinks: (data) => {
+        backlinks(data) {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.fileSlug;
 
@@ -48,6 +51,15 @@ module.exports = {
             }
 
             return backlinks;
-        }
+        },
+        async modified(data) {
+            const githubData = (await fetch(`https://api.github.com/repos/solanto/garden/commits?path=notes%2F${data.filename}&page=1&per_page=1`)
+                .then(result => result.json()))[0]
+
+            const modified = githubData.commit.committer.date;
+
+            return moment(modified).format("D MMM. YYYY");
+        },
+        modifications: data => `https://github.com/solanto/garden/commits/main/notes/${ data.filename }`
     }
 }

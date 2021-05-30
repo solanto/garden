@@ -16,7 +16,7 @@ nav:
         <div class="page-date">
             {{ page.date | shortutc | downcase }} /
             {% if modified %}
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/solanto/garden/commits/main{{ page.filePathStem }}.md">edited {{ modified | shortutc | downcase }}</a> /
+            <a target="_blank" rel="noopener noreferrer" href="{{ modifications }}">edited {{ modified | downcase }}</a> /
             {% endif %}
             <!--space->--> <!--<-space-->
             {% include backlinks.html %}

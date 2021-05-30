@@ -1,7 +1,6 @@
 ---
 date: 2021-02-25
 title: cognates in disguise
-modified: 2021-03-04
 ---
 
 # cognates in disguise

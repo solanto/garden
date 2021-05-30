@@ -1,7 +1,6 @@
 ---
 date: 2021-03-04
 title: lussekatter for the californian
-modified: 2021-03-05
 ---
 
 # lussekatter for the californian
