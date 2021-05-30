@@ -102,7 +102,11 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("scripts");
 
     const moment = require("moment");
-    eleventyConfig.addLiquidFilter("shortutc", date => moment.utc(date.toUTCString()).format("D MMM. YYYY"))
+    eleventyConfig.addLiquidFilter("shortutc",
+        date => moment.utc(date.toUTCString())
+            .format("D MMM. YYYY")
+            .replace("May.", "May")
+    )
 
     const katex = require("katex");
     eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {throwOnError: true}));

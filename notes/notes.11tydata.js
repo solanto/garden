@@ -61,7 +61,7 @@ module.exports = {
 
             const modified = githubData.commit.committer.date;
 
-            return moment(modified).format("D MMM. YYYY");
+            return moment(modified).format("D MMM. YYYY").replace("May.", "May");
         },
         modifications: data => `https://github.com/solanto/garden/commits/main/notes/${ data.filename }`
     }
