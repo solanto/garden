@@ -80,12 +80,12 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPlugin(typographyPlugin);
 
     const criticalCss = require("eleventy-critical-css");
-    if (true) {
+    if (production) {
         eleventyConfig.addPlugin(criticalCss, {
             minify: true,
             ignore: {
                 atrule: ["@font-face"],
-                decl  : (node, value) => /url\(/.test(value)
+                decl: (node, value) => /url\(/.test(value)
             }
         })
     }
