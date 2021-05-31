@@ -1,6 +1,6 @@
 ---
 layout: home
-icon: ⛩️
+icon: 🐸
 scripts: [html, into-the-garden]
 ---
 # hello, there.
