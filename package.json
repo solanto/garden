@@ -40,7 +40,6 @@
     "markdown-it-for-inline": "^0.1.1",
     "markdown-it-implicit-figures": "^0.10.0",
     "moment": "^2.29.1",
-    "netlify-cms-now": "file:cms",
     "node-fetch": "^2.6.1",
     "sass": "^1.34.0",
     "sharp": "^0.27.2"
