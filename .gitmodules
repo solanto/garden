@@ -1,3 +1,0 @@
-[submodule "garden-cms"]
-	path = cms
-	url = https://github.com/solanto/garden-cms.git
