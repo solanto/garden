@@ -41,6 +41,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 - The Strange Case of Starship Iris (season 2 ongoing)
 - Mamilos
+- Cosas que dijimos hoy
+- Sidenote by AsapSCIENCE
 
 ## videogames
 
