@@ -14,6 +14,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
   * "Not only is it easy to lie with maps, it's essential"
 * Le Petit Prince (Antoine de Saint-Exupéry)
+* The Boy, the Mole, the Fox, and the Horse (Charlie Mackesy)
 
 ## graphic novels
 
