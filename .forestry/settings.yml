@@ -18,6 +18,11 @@ sections:
 - type: document
   path: data/socials.yaml
   label: socials
+- type: directory
+  path: layouts
+  label: layouts
+  create: all
+  match: "**/*"
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
