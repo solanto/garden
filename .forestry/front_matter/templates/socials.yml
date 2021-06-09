@@ -12,3 +12,8 @@ fields:
   - type: text
     name: link
     label: link
+  - name: icon
+    type: text
+    config:
+      required: false
+    label: icon
