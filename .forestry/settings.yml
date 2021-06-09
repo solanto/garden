@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: index.md
+  label: home
+  match: "**/*"
+- type: document
   path: notes/index.md
   label: notes home
-  match: "**/*"
 - type: directory
   path: notes
   label: notes
