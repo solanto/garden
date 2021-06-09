@@ -8,3 +8,11 @@ fields:
 - type: datetime
   name: date
   label: date
+- name: scripts
+  type: tag_list
+  default: []
+  label: scripts
+- name: styles
+  type: tag_list
+  default: []
+  label: styles
