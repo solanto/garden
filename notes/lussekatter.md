@@ -64,7 +64,9 @@ Makes twelve medium buns.
 4. Whisk the 1 egg and the yogurt into the milk mixture.
 
    * Just get rid of big lumps; smaller ones are fine.
-5. Set aside about a tablespoon of the gluten-free flour for when you work the dough.
+5. Set aside some of the gluten-free flour for when you work the dough.
+
+   * If you’re unsure how much of your specific flour to use, you can set aside more and work the rest in later based on the dough’s stickiness.
 6. Add the gluten-free flour, almond flour, xanthan gum, sugar, and salt. Combine into a dough.
 7. Cover the bowl with a damp cloth and set it somewhere warm. Let the dough rise for 30 minutes.
 
