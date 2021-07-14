@@ -43,7 +43,7 @@ Makes twelve medium buns.
 
 ### garnish (optional)
 
-* 36 raisins
+* 24 raisins
 * 1 egg to glaze
 
 ### other things
