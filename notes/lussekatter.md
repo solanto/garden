@@ -27,7 +27,7 @@ Makes twelve medium buns.
 
   * Adjust to taste!
 * pinch of cardamom (careful, it's overpowering)
-* 300g too 600g gluten-free flour
+* between 300g and 600g gluten-free flour
 * * I've had success with the Bob's Red Mill All-Purpose blend of rice flour & tapioca flour.
   * You might need more, you might need less. Gluten-free flours vary—a lot.
   * I listed this in mass units instead of volume units because I'm bad at measuring. Bags of gluten-free flour are usually small and mass-labeled, so we can just use a fraction of the bag instead (or most of the bag, for the flour I listed).
