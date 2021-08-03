@@ -79,6 +79,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * Steve Mould
 * Babish Culinary Universe
 * AsapSCIENCE
+* Lisa Nguyen
+* The Korean Vegan
 
 ## music
 
