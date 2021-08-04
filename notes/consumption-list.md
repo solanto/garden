@@ -51,6 +51,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * 99% Invisible
 * Lingthusiasm
 * Lexicon Valley
+  * includes episodes of what’s now Spectacular Vernacular from 6 July 2021 and before
 * Spectacular Vernacular
 * Word Wrap
 
