@@ -42,18 +42,18 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 ## podcasts
 
-* The Strange Case of Starship Iris (season 2 ongoing)
-* Mamilos
-* Cosas que dijimos hoy
-* Sidenote by AsapSCIENCE
-* Simple Swedish Podcast
+* [The Strange Case of Starship Iris (season 2 ongoing)](https://www.procyonpodcastnetwork.com/tscosi-eps)
+* [Mamilos](https://www.b9.com.br/shows/mamilos/)
+* [Cosas que dijimos hoy](https://www.abrazogrupal.com/nuestros-podcasts)
+* [Sidenote by AsapSCIENCE](https://www.asapscience.com/podcast)
+* [Simple Swedish Podcast](https://www.swedishlinguist.com/podcast/)
   * great for learning the language!
-* 99% Invisible
-* Lingthusiasm
-* Lexicon Valley
-  * includes episodes of the podcast now named Spectacular Vernacular from 6 July 2021 and before
-* Spectacular Vernacular
-* Word Wrap
+* [99% Invisible](https://99percentinvisible.org/)
+* [Lingthusiasm](https://lingthusiasm.com/)
+* [Lexicon Valley](https://www.booksmartstudios.org/s/lexicon-valley?utm_source=substack&utm_medium=menu)
+  * includes episodes of the podcast now named [Spectacular Vernacular](https://slate.com/podcasts/spectacular-vernacular) from [6 July 2021 and before](https://slate.com/podcasts/lexicon-valley)
+* [Word Wrap](https://wordwrap.dev/)
+* [Ologies with Alie Ward](https://www.alieward.com/ologies)
 
 ## videogames
 
@@ -75,13 +75,14 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 ## youtube channels
 
-* emmymade
-* Tom Scott
-* Steve Mould
-* Babish Culinary Universe
-* AsapSCIENCE
-* Lisa Nguyen
-* The Korean Vegan
+* [emmymade](https://youtube.com/c/emmymade)
+* [Tom Scott](https://youtube.com/c/TomScottGo)
+* [Steve Mould](https://youtube.com/c/SteveMould)
+* [Babish Culinary Universe](https://youtube.com/c/bingingwithbabish)
+* [AsapSCIENCE](https://youtube.com/user/AsapSCIENCE)
+* [Lisa Nguyen](https://youtube.com/c/LisaNguyen)
+* [The Korean Vegan](https://youtube.com/c/TheKoreanVegan)
+* [Linus Boman](https://youtube.com/c/LinusBoman)
 
 ## music
 
