@@ -42,7 +42,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 ## podcasts
 
-* [The Strange Case of Starship Iris (season 2 ongoing)](https://www.procyonpodcastnetwork.com/tscosi-eps)
+* [The Strange Case of Starship Iris](https://www.procyonpodcastnetwork.com/tscosi-eps)
+  * season 2 ongoing
 * [Mamilos](https://www.b9.com.br/shows/mamilos/)
 * [Cosas que dijimos hoy](https://www.abrazogrupal.com/nuestros-podcasts)
 * [Sidenote by AsapSCIENCE](https://www.asapscience.com/podcast)
