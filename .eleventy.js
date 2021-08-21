@@ -79,16 +79,16 @@ module.exports = eleventyConfig => {
     const typographyPlugin = require("@jamshop/eleventy-plugin-typography");
     eleventyConfig.addPlugin(typographyPlugin);
 
-    const criticalCss = require("eleventy-critical-css");
-    if (production) {
-        eleventyConfig.addPlugin(criticalCss, {
-            minify: true,
-            ignore: {
-                atrule: ["@font-face"],
-                decl: (node, value) => /url\(/.test(value)
-            }
-        })
-    }
+    // const criticalCss = require("eleventy-critical-css");
+    // if (production) {
+    //     eleventyConfig.addPlugin(criticalCss, {
+    //         minify: true,
+    //         ignore: {
+    //             atrule: ["@font-face"],
+    //             decl: (node, value) => /url\(/.test(value)
+    //         }
+    //     })
+    // }
 
     // const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
     // eleventyConfig.addPlugin(lazyImagesPlugin, {
