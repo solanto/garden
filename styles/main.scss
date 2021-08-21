@@ -43,10 +43,10 @@
 $bg-corners: 0.3em;
 $background-color: #eee8e4;
 $foreground-color: #3c3830;
-$link-highlight: #0D743A;
+$link-highlight: rgba(178, 255, 68, 60%);
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
-$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing, color $link-transition-timing,
-        border-radius $link-transition-timing, transform $link-transition-timing;
+$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
+    color $link-transition-timing, border-radius $link-transition-timing, transform $link-transition-timing;
 
 body {
     font-family: "Bitter", serif, "Emoji";
@@ -81,23 +81,19 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        max-height: 5em;
+        max-height: 6em;
         margin-bottom: -$margin;
 
         a {
             width: fit-content;
-            border: 0.09rem solid $link-highlight;
+            border: 0.09em solid darkgreen;
             margin-bottom: $margin;
-            padding: 0.3em;
+            padding: 0.3em 0.5em;
             transition: $link-transition, border-color $link-transition-timing;
+            text-decoration: none;
 
             &:hover {
                 border-color: transparent;
-
-                &::before,
-                &::after {
-                    content: none;
-                }
             }
         }
     }
@@ -120,9 +116,9 @@ figure[data-type="image"] figcaption a {
 
     &:hover {
         background-color: $link-highlight;
-        color: $background-color;
         box-shadow: 0 0 0 0.4em $link-highlight;
-        transform: scale(0.95);
+        transform: scale(0.98);
+        text-decoration-style: double;
     }
 }
 
@@ -131,23 +127,12 @@ article {
 
     a,
     figure[data-type="image"] figcaption a {
-        &::before {
-            content: "{";
-        }
-
-        &::after {
-            content: "}";
-        }
-
         &::before,
         &::after {
             color: $link-highlight;
             font-weight: bold;
             transition: color $link-transition-timing;
         }
-
-        margin-left: -$link-padding;
-        margin-right: -$link-padding;
 
         &:hover {
             &::before,
@@ -159,11 +144,8 @@ article {
 
     a.external,
     figure[data-type="image"] figcaption a.external {
-        &::before {
-            content: "[";
-        }
         &::after {
-            content: "]";
+            content: ""; // TODO: indicate external
         }
     }
 }
@@ -186,7 +168,7 @@ main {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline 0.09em solid darkgreen;
     color: inherit;
 }
 
@@ -393,7 +375,7 @@ table {
 .socials {
     $size: 1.7em;
     $padding: 0.15em;
-    
+
     height: $size;
     user-select: none;
 
@@ -415,12 +397,7 @@ table {
         }
 
         &:hover {
-            background-color: transparent;
-            color: $foreground-color;
-
-            @supports (filter: invert(1)) {
-                box-shadow: 0 0 0 0.4em $background-color, 0 0 0 0.6em $link-highlight;
-            }
+            transform: scale(0.88);   
         }
     }
 
