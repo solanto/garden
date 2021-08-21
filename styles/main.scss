@@ -43,14 +43,17 @@
 $bg-corners: 0.3em;
 $background-color: #eee8e4;
 $foreground-color: #3c3830;
-$link-highlight: rgba(178, 255, 68, 60%);
+$link-highlight: rgb(255 65 0 / 28%);
+$link-decoration-color: scale-color(indigo, $saturation: -50%);
+$link-decoration-width: 0.084em;
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
 $link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
-    color $link-transition-timing, transform $link-transition-timing;
+    color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
 
 body {
     font-family: "Bitter", serif, "Emoji";
     font-size: 1.2rem;
+
     max-width: 9in;
     padding: 1.4em;
     margin: 1.4em auto;
@@ -86,7 +89,7 @@ header {
 
         a {
             width: fit-content;
-            border: 0.09em solid darkgreen;
+            border: $link-decoration-width solid $link-decoration-color;
             margin-bottom: $margin;
             padding: 0.3em 0.5em;
             transition: $link-transition, border-color $link-transition-timing;
@@ -118,7 +121,7 @@ figure[data-type="image"] figcaption a {
         background-color: $link-highlight;
         box-shadow: 0 0 0 0.4em $link-highlight;
         transform: scale(0.98);
-        text-decoration-style: double;
+        text-decoration-color: transparent;
     }
 }
 
@@ -127,13 +130,6 @@ article {
 
     a,
     figure[data-type="image"] figcaption a {
-        &::before,
-        &::after {
-            color: $link-highlight;
-            font-weight: bold;
-            transition: color $link-transition-timing;
-        }
-
         &:hover {
             &::before,
             &::after {
@@ -164,11 +160,11 @@ main {
     min-height: 100%;
     display: block;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 a {
-    text-decoration: underline 0.09em solid darkgreen;
+    text-decoration: underline $link-decoration-width solid $link-decoration-color;
     color: inherit;
 }
 
@@ -303,7 +299,7 @@ pre {
 
 table {
     border-collapse: collapse;
-    $accent: #edf2e9;
+    $accent: rgba(243, 212, 36, 0.226);
 
     th,
     td {
@@ -332,7 +328,7 @@ table {
     }
 
     th {
-        background-color: darken(saturate($accent, 10%), 10%);
+        background-color: scale-color($accent, $lightness: -10%, $alpha: 50%);
     }
 
     @media (orientation: portrait) {
