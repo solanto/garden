@@ -46,7 +46,7 @@ $foreground-color: #3c3830;
 $link-highlight: rgba(178, 255, 68, 60%);
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
 $link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
-    color $link-transition-timing, border-radius $link-transition-timing, transform $link-transition-timing;
+    color $link-transition-timing, transform $link-transition-timing;
 
 body {
     font-family: "Bitter", serif, "Emoji";
