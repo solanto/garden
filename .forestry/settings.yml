@@ -1,13 +1,12 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: document
   path: index.md
   label: home
-  match: "**/*"
 - type: document
   path: notes/index.md
   label: notes home
@@ -16,6 +15,9 @@ sections:
   label: notes
   create: documents
   match: "**/*"
+- type: document
+  path: data/socials.yaml
+  label: socials
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''

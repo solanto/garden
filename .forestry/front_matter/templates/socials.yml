@@ -1,0 +1,19 @@
+---
+label: socials
+hide_body: true
+fields:
+- type: field_group_list
+  name: Socials
+  label: Socials
+  fields:
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: link
+    label: link
+  - name: icon
+    type: text
+    config:
+      required: false
+    label: icon
