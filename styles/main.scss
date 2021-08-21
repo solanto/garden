@@ -1,16 +1,23 @@
-$bg-corners: 0.3em;
-
-@font-face {
-    font-family: "Emoji";
-    src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/fonts/noto-color-emoji.ttf");
-    font-display: fallback;
-}
+@use "sass:math";
 
 @font-face {
     font-family: "Bitter";
     src: url("/assets/fonts/bitter.ttf");
     font-display: fallback;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/assets/fonts/playfair-display-extra-bold.ttf");
+    font-display: fallback;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Emoji";
+    src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/fonts/noto-color-emoji.ttf");
+    font-display: fallback;
 }
 
 @font-face {
@@ -21,20 +28,37 @@ $bg-corners: 0.3em;
 }
 
 @font-face {
+    font-family: "Playfair Display";
+    src: url("/assets/fonts/playfair-display-extra-bold-italic.ttf");
+    font-display: fallback;
+    font-style: italic;
+}
+
+@font-face {
     font-family: "Fira Code";
     src: local("Fira Code"), url("/assets/fonts/fira-code.woff2"), url("/assets/fonts/fira-code.woff");
     font-display: fallback;
 }
 
+$bg-corners: 0.3em;
+$background-color: #eee8e4;
+$foreground-color: #3c3830;
+$link-highlight: #0D743A;
+$link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
+$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing, color $link-transition-timing,
+        border-radius $link-transition-timing, transform $link-transition-timing;
+
 body {
     font-family: "Bitter", serif, "Emoji";
+    font-size: 1.2rem;
     max-width: 9in;
     padding: 1.4em;
     margin: 1.4em auto;
     margin-bottom: 0;
-    background-color: #f5f4f2;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-	-webkit-tap-highlight-color: transparent;
+    background-color: $background-color;
+    color: $foreground-color;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 header {
@@ -45,13 +69,14 @@ header {
         font-size: 3em;
     }
 
-    .page-icon, nav a {
+    .page-icon,
+    nav a {
         margin-right: 1rem;
     }
 
     nav {
-        $margin: 0.2em;
-        
+        $margin: 0.6em;
+
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -61,11 +86,18 @@ header {
 
         a {
             width: fit-content;
-            border: 1px solid lightgrey;
+            border: 0.09rem solid $link-highlight;
             margin-bottom: $margin;
+            padding: 0.3em;
+            transition: $link-transition, border-color $link-transition-timing;
 
             &:hover {
-                border: 1px solid black;
+                border-color: transparent;
+
+                &::before,
+                &::after {
+                    content: none;
+                }
             }
         }
     }
@@ -73,39 +105,77 @@ header {
 
 $link-padding: 0.1em;
 
-a, figure[data-type=image] figcaption a {
+a,
+figure[data-type="image"] figcaption a {
     border-radius: $bg-corners;
-    transition: 0.1s;
     padding: $link-padding;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+    border-radius: 1em;
+    display: inline-block;
+    padding: 0;
+
+    transition: $link-transition;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: $link-highlight;
+        color: $background-color;
+        box-shadow: 0 0 0 0.4em $link-highlight;
+        transform: scale(0.95);
     }
 }
 
 article {
     margin: 1em 0;
 
-    a, figure[data-type=image] figcaption a {
-        &::before { content: "{" }
-        &::after { content: "}" }
+    a,
+    figure[data-type="image"] figcaption a {
+        &::before {
+            content: "{";
+        }
+
+        &::after {
+            content: "}";
+        }
+
+        &::before,
+        &::after {
+            color: $link-highlight;
+            font-weight: bold;
+            transition: color $link-transition-timing;
+        }
 
         margin-left: -$link-padding;
         margin-right: -$link-padding;
+
+        &:hover {
+            &::before,
+            &::after {
+                color: transparent;
+            }
+        }
     }
 
-    a.external, figure[data-type=image] figcaption a.external {
-        &::before { content: "[" }
-        &::after { content: "]" }
+    a.external,
+    figure[data-type="image"] figcaption a.external {
+        &::before {
+            content: "[";
+        }
+        &::after {
+            content: "]";
+        }
     }
 }
 
-h1, h2, h3, h4, h5, h6, th {
-    font-weight: 500;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display";
+    font-weight: 100;
 }
 
 main {
@@ -137,14 +207,17 @@ hr {
     margin: 0 -1em;
 }
 
-figure, pre, code {
+figure,
+pre,
+code {
     border-radius: $bg-corners;
-    background-color: #FAFAFA;
-    color: darken(#575f66, 10%);
+    background-color: scale-color($background-color, $whiteness: 50%);
+    color: scale-color(#575f66, $whiteness: -10%);
     box-shadow: 0 0 0.5in transparentize(#575f66, 0.97);
 }
 
-figure, pre {
+figure,
+pre {
     padding: 1em;
 }
 
@@ -157,13 +230,20 @@ figure {
     flex-direction: column;
     align-items: center;
     margin: 1em 0;
-    
-    a, div {
+
+    a,
+    div {
         max-height: 4in;
         text-align: center;
+
+        img {
+            transition: border-radius $link-transition-timing;
+            border-radius: 0;
+        }
     }
 
-    img, iframe {
+    img,
+    iframe {
         max-width: 100%;
         max-height: inherit;
         filter: drop-shadow(0 0 3pt transparentize(#575f66, 0.8));
@@ -175,10 +255,11 @@ figure {
         margin-top: 1em;
         font-style: italic;
         text-align: center;
-        font-size: 0.90em;
+        font-size: 0.9em;
     }
 
-    &.math, table {
+    &.math,
+    table {
         color: black;
 
         .katex-display {
@@ -196,21 +277,37 @@ blockquote {
     padding-inline-start: 2em;
 }
 
-.footnote-ref a, .footnote-backref, .no-decor, figure[data-type="image"] a {
-    &::before { content: none }
-    &::after { content: none }
+.footnote-ref a,
+.footnote-backref,
+.no-decor,
+figure[data-type="image"] a {
+    &::before {
+        content: none;
+    }
+    &::after {
+        content: none;
+    }
 }
 
 figure[data-type="image"] a:hover {
     color: inherit;
     background-color: inherit;
+
+    img {
+        border-radius: inherit;
+    }
 }
 
-pre, code, .footnote-ref a, .footnote-backref, .footnote-item::marker {
+pre,
+code,
+.footnote-ref a,
+.footnote-backref,
+.footnote-item::marker {
     font-family: "Fira Code", monospace;
 }
 
-pre, code {
+pre,
+code {
     word-break: break-all;
     white-space: pre-wrap;
 }
@@ -226,7 +323,8 @@ table {
     border-collapse: collapse;
     $accent: #edf2e9;
 
-    th, td {
+    th,
+    td {
         $corners: 0.1rem;
         padding: 0.5rem;
         border-right: 1px $accent solid;
@@ -241,7 +339,8 @@ table {
         }
     }
 
-    th, tr:nth-child(2n) td {
+    th,
+    tr:nth-child(2n) td {
         background-color: $accent;
         border-right: 1px white solid;
 
@@ -251,13 +350,14 @@ table {
     }
 
     th {
-        background-color: darken(saturate($accent, 10%), 10%)
+        background-color: darken(saturate($accent, 10%), 10%);
     }
 
     @media (orientation: portrait) {
         font-size: 0.9em;
 
-        th, td {
+        th,
+        td {
             $padding-block: 0.3rem;
             padding-top: $padding-block;
             padding-bottom: $padding-block;
@@ -274,7 +374,8 @@ table {
     font-style: italic;
 }
 
-.backlinks, .backlinks-signal {
+.backlinks,
+.backlinks-signal {
     display: inline;
     padding-inline-start: 0;
 }
@@ -287,4 +388,44 @@ table {
 
 .preview {
     display: none;
+}
+
+.socials {
+    $size: 1.7em;
+    $padding: 0.15em;
+    
+    height: $size;
+    user-select: none;
+
+    a {
+        height: inherit;
+        text-decoration: none;
+        margin-right: math.div($size, 2) - $padding;
+        padding: $padding;
+        display: inline-block;
+        filter: invert(0);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        img {
+            height: inherit;
+            filter: opacity(0.75); // TODO: make SVGs use current color
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $foreground-color;
+
+            @supports (filter: invert(1)) {
+                box-shadow: 0 0 0 0.4em $background-color, 0 0 0 0.6em $link-highlight;
+            }
+        }
+    }
+
+    @media (orientation: portrait) {
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
