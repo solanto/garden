@@ -1,3 +1,5 @@
+// TODO: please get rid of gulp
+
 const { task, src, dest, watch, series, parallel } = require("gulp");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");

@@ -59,6 +59,8 @@ module.exports = {
                 headers: new Headers({ "Authorization": "token " + garden.githubToken })
             }).then(result => result.json()))[0]
 
+            if (!githubData) return " "
+
             const modified = githubData.commit.committer.date;
 
             return moment(modified).format("D MMM. YYYY").replace("May.", "May");
