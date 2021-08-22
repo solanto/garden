@@ -120,7 +120,6 @@ figure[data-type="image"] figcaption a {
     &:hover {
         background-color: $link-highlight;
         box-shadow: 0 0 0 0.4em $link-highlight;
-        transform: scale(0.98);
         text-decoration-color: transparent;
     }
 }
