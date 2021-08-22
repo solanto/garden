@@ -18,7 +18,7 @@ McCulloch jokes about how she just can't pronounce Gawne's last name the way Gaw
 
 McCulloch remaps Gawne’s vowel space onto her own space[^1] on-the-fly, interpreting the sounds Gawne makes in speech in a way that fits her own model of speech.
 
-![if we take Southern Californian English as a baseline: i tends to be raised Australian accents while ɪ, u,  and o tend to be lowered and retracted (moved backward); attribution: [^2]](/assets/socal-aus-vowel-shifts.svg)
+![if we take Southern Californian English as an arbitrary baseline: i tends to be raised Australian accents while ɪ, u,  and o tend to be lowered and retracted (moved backward); attribution: [^2]](/assets/socal-aus-vowel-shifts.svg)
 
 Spaces... mapping... this sounds awfully like Wednesday morning math class. We can view the vowel remapping process as a function; we input Gawne’s accent to produce McCulloch’s accent as an output. It’s difficult to assign dimensions to sounds, but McCulloch explains that two dimensions are generally enough for vowels:
 
@@ -28,7 +28,7 @@ Since this function acts over the entire continuous vowel space, the function ef
 
 ![if each of McCulloch’s vowels were a point on a color space, mixing around that color space (almost like a colorful soup) according to the transformation function yields Gawne’s vowels; attribution: [^2]](/assets/vowel-space-transformation.gif)
 
-We call this a nonlinear transformation {% math %}S \rightarrow S{% endmath %} where {% math %}S{% endmath %} is the vowel space within the trapezium model. The function maps points in the space to  different points in the same space; we stay in {% math %}S{% endmath %} throughout. If we represent the horizontal and vertical positions of vowels with real quantities, like position in the 2D diagrams above, the transformation maps a subspace of 2D space ({% math %}\mathbb{R}^2{% endmath %}) onto that same chunk of 2D space[^3]. This makes the function similar to a function {% math %}\mathbb{R}^2 \rightarrow \mathbb{R}^2{% endmath %}.
+We call this a nonlinear transformation {% math %}S \rightarrow S{% endmath %} where {% math %}S{% endmath %} is the two-dimensional vowel space within the trapezium model. The function maps points in the space to  different points in the same space; we stay in {% math %}S{% endmath %} throughout. If we represent the horizontal and vertical positions of vowels with real quantities, like position in the 2D diagrams above, the transformation maps a subspace of 2D real space ({% math %}\mathbb{R}^2{% endmath %}) onto that same chunk of 2D space[^3]. This makes the function similar to a function {% math %}\mathbb{R}^2 \rightarrow \mathbb{R}^2{% endmath %}.
 
 Although this is a very meta, abstract way to represent what’s going on in our brains when we listen to people with accents different from our own, this does make one thing clear: we could feasibly represent that intuitive accent conversion mathematically, if we wanted. Since this transformation isn’t linear (thanks to uneven squishing), it could be approximated using a machine learning model. Because the transformation is only over two dimensions, an approximate function wouldn’t be difficult to compute, in theory.
 
