@@ -26,7 +26,7 @@ Spaces... mapping... this sounds awfully like Wednesday morning math class. We c
 
 Since this function acts over the entire continuous vowel space, the function effectively squishes and contorts the locations of vowels defined by Gawne’s trapezium so that they conform to the locations defined by her own trapezium.
 
-![if each of McCulloch’s vowels were a point on a color space, mixing around that color space (almost like a liquid) according to the transformation function yields Gawne’s vowels; attribution: [^2]](/assets/vowel-space-transformation.gif)
+![if each of McCulloch’s vowels were a point on a color space, mixing around that color space (almost like a colorful soup) according to the transformation function yields Gawne’s vowels; attribution: [^2]](/assets/vowel-space-transformation.gif)
 
 We call this a nonlinear transformation {% math %}S \rightarrow S{% endmath %} where {% math %}S{% endmath %} is the vowel space within the trapezium model. The function maps points in the space to  different points in the same space; we stay in {% math %}S{% endmath %} throughout. If we represent the horizontal and vertical positions of vowels with real quantities, like position in the 2D diagrams above, the transformation maps a subspace of 2D space ({% math %}\mathbb{R}^2{% endmath %}) onto that same chunk of 2D space[^3]. This makes the function similar to a function {% math %}\mathbb{R}^2 \rightarrow \mathbb{R}^2{% endmath %}.
 
