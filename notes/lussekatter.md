@@ -87,7 +87,7 @@ Enjoy!
 
 I don't know how much flour this recipe really needs.  Arla's recipe calls for about half the maximum amount I do, but that's always been too little in my experience. Uncertainty aside, our goal is just something doughy and moist, not pasty and sticky.
 
-I'm no master baker; I'm always convinced I've made some fatal flaw, and that this recipe isn't going to work. Until it does—every time. It's remarkably forgiving, and that's why I recommend it.
+I'm no master baker; I'm always convinced I've made some fatal flaw, and that this recipe isn't going to work. Until it does, in some capacity, every time. I've gotten fluffy as well as unfortunately dense results (curses, gluten free woes), but all have been "good" so far. It's pretty forgiving, and that's why I recommend it.
 
 - - -
 
