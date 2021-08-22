@@ -10,7 +10,7 @@ My first linear algebra course—done! Though, I wish it were that simple; my ex
 
 I was listening to episode seventeen, ["Vowel Gymnastics,"](https://lingthusiasm.com/post/170920044226/lingthusiasm-episode-16-vowel-gymnastics-open) of [_Lingthusiasm_](/notes/consumption-list) with Gretchen McCulloch and Lauren Gawne, where they talk about how vowels define accents. McCulloch and Gawne explain how linguists typically use a trapezoid (_trapezium_) to model the continuum of all the possible vowel sounds humans can make.
 
-![the Southern California vowel trapezium shows, for example, æ articulated at the low front of the mouth and o articulated at the mid back of the mouth; diagram is [“California English vowel chart”](https://commons.wikimedia.org/wiki/File:California_English_vowel_chart.svg) by [Moxfyre](https://commons.wikimedia.org/wiki/User:Moxfyre) and [Peter238](https://commons.wikimedia.org/wiki/User_talk:Peter238), both under [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)](https://upload.wikimedia.org/wikipedia/commons/0/08/California_English_vowel_chart.svg)
+![the Southern California vowel trapezium shows, for example, æ articulated at the low front of the mouth and o articulated at the mid back of the mouth; diagram is [“California English vowel chart”](https://commons.wikimedia.org/wiki/File:California_English_vowel_chart.svg) by [Moxfyre](https://commons.wikimedia.org/wiki/User:Moxfyre) and [Peter238](https://commons.wikimedia.org/wiki/User_talk:Peter238) under [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)](https://upload.wikimedia.org/wikipedia/commons/0/08/California_English_vowel_chart.svg)
 
 McCulloch jokes about how she just can't pronounce Gawne's last name the way Gawne does herself:
 
