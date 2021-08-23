@@ -6,12 +6,6 @@
     font-display: fallback;
 }
 
-@font-face {
-    font-family: "Fira Code";
-    src: local("Fira Code"), url("/assets/fonts/fira-code.woff2"), url("/assets/fonts/fira-code.woff");
-    font-display: fallback;
-}
-
 $bg-corners: 0.3em;
 $background-color: #eee8e4;
 $foreground-color: #3c3830;
@@ -72,6 +66,15 @@ header {
             }
         }
     }
+}
+
+#intro {
+    font-size: 0.8em;
+    font-family: "Fira Code";
+    margin-top: 3.5em;
+    margin-bottom: -1em;
+    opacity: 80%;
+    transition: opacity 2s;
 }
 
 $link-padding: 0.1em;

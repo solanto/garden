@@ -4,6 +4,7 @@ icon: "⛩"
 scripts:
 - html
 - into-the-garden
+- intro-typewriter
 
 ---
 # hello, there.

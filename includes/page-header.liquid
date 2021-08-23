@@ -1,6 +1,6 @@
 {% comment %} TODO: add skip to main content link {% endcomment %}
 <header class="header">
-    <span class="page-icon" aria-hidden>{{ icon }}</span>
+    <span class="page-icon" aria-hidden="true">{{ icon }}</span>
     <nav>
         {% for item in nav %}
         <a href="{{ item.link }}" {% if item.id %}id="{{ item.id }}"{% endif %}>{{ item.title }}</a>

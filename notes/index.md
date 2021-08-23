@@ -5,6 +5,7 @@ icon: 🗺️
 nav:
     - title: back to the entrance
       link: /
+intro: "an instructive document lies just ahead of the garden's entrance. it exclaims:"
 ---
 
 # take this guide!
