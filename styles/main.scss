@@ -1,37 +1,9 @@
 @use "sass:math";
 
 @font-face {
-    font-family: "Bitter";
-    src: url("/assets/fonts/bitter.ttf");
-    font-display: fallback;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("/assets/fonts/playfair-display-extra-bold.ttf");
-    font-display: fallback;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Emoji";
     src: local("Apple Color Emoji"), local("Noto Color Emoji"), url("/assets/fonts/noto-color-emoji.ttf");
     font-display: fallback;
-}
-
-@font-face {
-    font-family: "Bitter";
-    src: url("/assets/fonts/bitter-italic.ttf");
-    font-display: fallback;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("/assets/fonts/playfair-display-extra-bold-italic.ttf");
-    font-display: fallback;
-    font-style: italic;
 }
 
 @font-face {
@@ -43,7 +15,7 @@
 $bg-corners: 0.3em;
 $background-color: #eee8e4;
 $foreground-color: #3c3830;
-$link-highlight: rgb(255 65 0 / 28%);
+$link-highlight: #24ff8760;
 $link-decoration-color: scale-color(indigo, $saturation: -50%);
 $link-decoration-width: 0.084em;
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
@@ -51,7 +23,7 @@ $link-transition: background-color $link-transition-timing, box-shadow $link-tra
     color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
 
 body {
-    font-family: "Bitter", serif, "Emoji";
+    font-family: "Atkinson Hyperlegible", serif, "Emoji";
     font-size: 1.2rem;
 
     max-width: 9in;
@@ -119,7 +91,7 @@ figure[data-type="image"] figcaption a {
 
     &:hover {
         background-color: $link-highlight;
-        box-shadow: 0 0 0 0.4em $link-highlight;
+        box-shadow: 0 0 0 0.3em $link-highlight;
         text-decoration-color: transparent;
     }
 }
@@ -151,7 +123,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display";
+    font-family: "Calistoga";
     font-weight: 100;
 }
 

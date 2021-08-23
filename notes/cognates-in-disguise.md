@@ -29,8 +29,8 @@ This creates parallels like:
 | ware (as in *warehouse*)  | vara (ware)                       | gare (train station; a little like *warehouse*)                                       |
 | ward                      | vård (protection)                 | garder (keep)                                                                         |
 | warn                      | varna                             | garnir (garnish, equip)                                                               |
-| warranty (guarantee) | - | garantie |
-| wax (as in *waxing moon*) | växa (grow) | - |
+| warranty (guarantee)      | -                                 | garantie                                                                              |
+| wax (as in *waxing moon*) | växa (grow)                       | -                                                                                     |
 | walk (originally to roll) | valka (to process & roll cloth)   | gauche (left; this one is [weird](https://en.wiktionary.org/wiki/gauche#Etymology_2)) |
 
 Most of these parallels developed and changed over time. English later re-borrowed some words like *garder* and *garnir* from French to produce modern doublets like *ward* and *guard*, and *warn* and *garnish*. Many of the French borrowings like those above also made their ways into other romance languages; *gaufre* and *guerre* led to *gofre* and *guerra* in Spanish, among others.

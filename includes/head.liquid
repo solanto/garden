@@ -1,21 +1,21 @@
 {% assign metatitle = site.title %}
 
 {% if type == "note" %}
-    {% assign metatitle = site.author | append: "'s notes" %}
+{% assign metatitle = site.author | append: "'s notes" %}
 {% endif %}
 
 {% if title %}
-    {% assign metatitle = metatitle | prepend: " • " | prepend: title | downcase%}
+{% assign metatitle = metatitle | prepend: " • " | prepend: title | downcase %}
 {% endif %}
 
 {% assign metadesc = site.desc %}
 {% if desc %}
-    {% assign metadesc = desc %}
+{% assign metadesc = desc %}
 {% endif %}
 
 {% assign metatype = "website" %}
 {% if type == "note" %}
-    {% assign metatype = "article" %}
+{% assign metatype = "article" %}
 {% endif %}
 
 <meta charset="UTF-8">
@@ -36,10 +36,15 @@
 
 <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&display=swap"
+    rel="stylesheet">
+
 <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 {% style "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" %}
 {% style "/styles/main.css" %}
-{% style "/styles/bitter-font-features.css" %}
-{% style "/styles/playfair-font-features.css" %}
+
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
-<script>document.addEventListener("touchstart", ()=>{}, true);</script>
+<script>document.addEventListener("touchstart", () => { }, true);</script>
