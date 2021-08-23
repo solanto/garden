@@ -1,5 +1,6 @@
+// TODO: add skip to main content link
 <header class="header">
-    <span class="page-icon">{{ icon }}</span>
+    <span class="page-icon" aria-hidden>{{ icon }}</span>
     <nav>
         {% for item in nav %}
         <a href="{{ item.link }}" {% if item.id %}id="{{ item.id }}"{% endif %}>{{ item.title }}</a>
