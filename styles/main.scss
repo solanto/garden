@@ -15,6 +15,11 @@ $link-decoration-width: 0.084em;
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
 $link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
     color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
+$table-accent: rgba(243, 212, 36, 0.226);
+
+:root {
+    --link-decoration-color: #{$link-decoration-color};
+}
 
 body {
     font-family: "Atkinson Hyperlegible", serif, "Emoji";
@@ -28,6 +33,23 @@ body {
     color: $foreground-color;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+
+    &::before {
+        content: "";
+        background-image: url("/assets/header-leaves.webp");
+        background-size: cover;
+        background-position: left bottom;
+        width: 100%;
+        height: clamp(25em, 25vw, 30vh);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+        filter: contrast(0.2) saturate(1.5) blur(1px);
+        opacity: 40%;
+        mix-blend-mode: color-burn;
+    }
 }
 
 header {
@@ -55,7 +77,7 @@ header {
 
         a {
             width: fit-content;
-            border: $link-decoration-width solid $link-decoration-color;
+            border: $link-decoration-width solid var(--link-decoration-color);
             margin-bottom: $margin;
             padding: 0.3em 0.5em;
             transition: $link-transition, border-color $link-transition-timing;
@@ -72,7 +94,6 @@ header {
     font-size: 0.8em;
     font-family: "Fira Code";
     margin-top: 3.5em;
-    margin-bottom: -1em;
     opacity: 80%;
     transition: opacity 2s;
 }
@@ -102,16 +123,6 @@ figure[data-type="image"] figcaption a {
 article {
     margin: 1em 0;
 
-    a,
-    figure[data-type="image"] figcaption a {
-        &:hover {
-            &::before,
-            &::after {
-                color: transparent;
-            }
-        }
-    }
-
     a.external,
     figure[data-type="image"] figcaption a.external {
         &::after {
@@ -138,7 +149,7 @@ main {
 }
 
 a {
-    text-decoration: underline $link-decoration-width solid $link-decoration-color;
+    text-decoration: underline $link-decoration-width solid var(--link-decoration-color);
     color: inherit;
 }
 
@@ -190,7 +201,7 @@ figure {
 
         img {
             transition: border-radius $link-transition-timing;
-            border-radius: 0;
+            border-radius: inherit;
         }
     }
 
@@ -201,6 +212,12 @@ figure {
         filter: drop-shadow(0 0 3pt transparentize(#575f66, 0.8));
         width: auto;
         height: auto;
+    }
+
+    a,
+    div,
+    iframe {
+        border-radius: 0.2rem;
     }
 
     figcaption {
@@ -229,27 +246,6 @@ blockquote {
     padding-inline-start: 2em;
 }
 
-.footnote-ref a,
-.footnote-backref,
-.no-decor,
-figure[data-type="image"] a {
-    &::before {
-        content: none;
-    }
-    &::after {
-        content: none;
-    }
-}
-
-figure[data-type="image"] a:hover {
-    color: inherit;
-    background-color: inherit;
-
-    img {
-        border-radius: inherit;
-    }
-}
-
 pre,
 code,
 .footnote-ref a,
@@ -273,13 +269,12 @@ pre {
 
 table {
     border-collapse: collapse;
-    $accent: rgba(243, 212, 36, 0.226);
 
     th,
     td {
         $corners: 0.1rem;
         padding: 0.5rem;
-        border-right: 1px $accent solid;
+        border-right: 1px $table-accent solid;
 
         &:first-child {
             border-radius: $corners 0 0 $corners;
@@ -293,7 +288,7 @@ table {
 
     th,
     tr:nth-child(2n) td {
-        background-color: $accent;
+        background-color: $table-accent;
         border-right: 1px white solid;
 
         &:last-child {
@@ -302,7 +297,7 @@ table {
     }
 
     th {
-        background-color: scale-color($accent, $lightness: -10%, $alpha: 50%);
+        background-color: scale-color($table-accent, $lightness: -10%, $alpha: 50%);
     }
 
     @media (orientation: portrait) {
@@ -367,12 +362,79 @@ table {
         }
 
         &:hover {
-            transform: scale(0.88);   
+            transform: scale(0.88);
         }
     }
 
     @media (orientation: portrait) {
         width: fit-content;
         margin: 0 auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --link-decoration-color: #{scale-color($link-decoration-color, $saturation: -40%, $lightness: 60%)};
+    }
+
+    body {
+        background-color: scale-color($foreground-color, $lightness: -80%);
+
+        &::before {
+            filter: contrast(0.65) saturate(1.2) blur(1px);
+            opacity: 15%;
+            mix-blend-mode: lighten;
+        }
+    }
+
+    body,
+    th,
+    td {
+        color: $background-color;
+    }
+
+    $figure-background: scale-color($background-color, $lightness: -90%, $saturation: -50%);
+
+    figure,
+    pre,
+    code {
+        background-color: $figure-background;
+        color: scale-color(#575f66, $lightness: 65%);
+        box-shadow: 0 0 0.5in transparentize(#575f66, 0.97);
+    }
+
+    figure {
+        img,
+        iframe {
+            filter: drop-shadow(0 0 8pt transparentize(scale-color(#575f66, $whiteness: 50%), 0.8));
+        }
+    }
+
+    table {
+        $dark-table-accent: transparentize($table-accent, 0.1);
+
+        th,
+        td {
+            border-right: 1px $dark-table-accent solid;
+        }
+
+        th,
+        tr:nth-child(2n) td {
+            background-color: $dark-table-accent;
+        }
+
+        th {
+            background-color: scale-color($dark-table-accent, $lightness: -10%, $alpha: 50%);
+        }
+
+        th,
+        tr:nth-child(2n) td {
+            border-right: 1px $figure-background solid;
+        }
+    }
+
+    .socials a img {
+        filter: invert(1);
+        opacity: 80%;
     }
 }
