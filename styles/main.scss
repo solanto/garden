@@ -16,8 +16,7 @@ $link-decoration-width: 0.084em;
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
 $table-accent: rgba(243, 212, 36, 0.226);
 
-$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
-    color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
+$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing, text-decoration-color $link-transition-timing;
 
 body {
     font-family: "Atkinson Hyperlegible", serif, "Emoji";
