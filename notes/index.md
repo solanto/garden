@@ -1,7 +1,7 @@
 ---
 layout: home
 title: guide
-icon: 🗺️
+icon: 🔍
 nav:
     - title: back to the entrance
       link: /
