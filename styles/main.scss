@@ -113,10 +113,14 @@ figure[data-type="image"] figcaption a {
 
     transition: $link-transition;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: $link-highlight;
         box-shadow: 0 0 0 0.3em $link-highlight;
         text-decoration-color: transparent;
+    }
+
+    &:focus {
+        transition: 0.05s;
     }
 }
 
@@ -149,7 +153,11 @@ main {
 }
 
 a {
-    text-decoration: underline $link-decoration-width solid var(--link-decoration-color);
+    $text-decoration: underline $link-decoration-width solid var(--link-decoration-color);
+
+    text-decoration: $text-decoration;
+    --webkit-text-decoration: $text-decoration;
+
     color: inherit;
 }
 
@@ -359,10 +367,6 @@ table {
         img {
             height: inherit;
             filter: opacity(0.75); // TODO: make SVGs use current color
-        }
-
-        &:hover {
-            transform: scale(0.88);
         }
     }
 
