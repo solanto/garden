@@ -24,7 +24,7 @@ $table-accent: rgba(243, 212, 36, 0.226);
 body {
     font-family: "Atkinson Hyperlegible", serif, "Emoji";
     font-size: 1.2rem;
-
+    text-underline-offset: 0.05em;
     max-width: 9in;
     padding: 1.4em;
     margin: 1.4em auto;
@@ -153,10 +153,8 @@ main {
 }
 
 a {
-    $text-decoration: underline $link-decoration-width solid var(--link-decoration-color);
-
-    text-decoration: $text-decoration;
-    --webkit-text-decoration: $text-decoration;
+    text-decoration: underline $link-decoration-width solid var(--link-decoration-color);;
+    -webkit-text-decoration-color: var(--link-decoration-color);
 
     color: inherit;
 }
