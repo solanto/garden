@@ -43,7 +43,7 @@ body {
         top: 0;
         z-index: -1;
         background-repeat: no-repeat;
-        filter: contrast(0.2) saturate(1.5) blur(1px);
+        filter: contrast(0.2) saturate(1.5);
         opacity: 40%;
         mix-blend-mode: color-burn;
     }
