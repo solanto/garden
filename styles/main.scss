@@ -11,15 +11,13 @@ $background-color: #eee8e4;
 $foreground-color: #3c3830;
 $link-highlight: #24ff8760;
 $link-decoration-color: scale-color(indigo, $saturation: -50%);
+$lighter-link-decoration-color: scale-color($link-decoration-color, $saturation: -40%, $lightness: 60%);
 $link-decoration-width: 0.084em;
 $link-transition-timing: 0.4s cubic-bezier(1, 0.01, 0.45, 1);
-$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
-    color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
 $table-accent: rgba(243, 212, 36, 0.226);
 
-:root {
-    --link-decoration-color: #{$link-decoration-color};
-}
+$link-transition: background-color $link-transition-timing, box-shadow $link-transition-timing,
+    color $link-transition-timing, transform $link-transition-timing, text-decoration-color $link-transition-timing;
 
 body {
     font-family: "Atkinson Hyperlegible", serif, "Emoji";
@@ -27,12 +25,11 @@ body {
     text-underline-offset: 0.05em;
     max-width: 9in;
     padding: 1.4em;
-    margin: 1.4em auto;
+    margin: 1.4em auto !important; // normalize.css breaks this without !important
     margin-bottom: 0;
     background-color: $background-color;
     color: $foreground-color;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: $link-highlight;
 
     &::before {
         content: "";
@@ -77,7 +74,7 @@ header {
 
         a {
             width: fit-content;
-            border: $link-decoration-width solid var(--link-decoration-color);
+            border: $link-decoration-width solid $link-decoration-color;
             margin-bottom: $margin;
             padding: 0.3em 0.5em;
             transition: $link-transition, border-color $link-transition-timing;
@@ -113,7 +110,8 @@ figure[data-type="image"] figcaption a {
 
     transition: $link-transition;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: $link-highlight;
         box-shadow: 0 0 0 0.3em $link-highlight;
         text-decoration-color: transparent;
@@ -153,8 +151,8 @@ main {
 }
 
 a {
-    text-decoration: underline $link-decoration-width solid var(--link-decoration-color);;
-    -webkit-text-decoration-color: var(--link-decoration-color);
+    text-decoration: underline $link-decoration-width solid $link-decoration-color;
+    -webkit-text-decoration-color: $link-decoration-color;
 
     color: inherit;
 }
@@ -376,10 +374,6 @@ table {
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --link-decoration-color: #{scale-color($link-decoration-color, $saturation: -40%, $lightness: 60%)};
-    }
-
     body {
         background-color: scale-color($foreground-color, $lightness: -80%);
 
@@ -388,6 +382,15 @@ table {
             opacity: 15%;
             mix-blend-mode: lighten;
         }
+    }
+
+    a {
+        text-decoration-color: $lighter-link-decoration-color;
+        -webkit-text-decoration-color: $lighter-link-decoration-color;
+    }
+
+    header nav a {
+        border-color: $lighter-link-decoration-color;
     }
 
     body,
