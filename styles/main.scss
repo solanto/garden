@@ -341,24 +341,23 @@ table {
     display: none;
 }
 
-.socials {
+.footer-links {
     $size: 1.7em;
     $padding: 0.15em;
+    
+    $base-margin: math.div($size, 2) - $padding;
 
     height: $size;
     user-select: none;
+    display: inline-block;
 
     a {
         height: inherit;
         text-decoration: none;
-        margin-right: math.div($size, 2) - $padding;
+        margin-right: $base-margin;
         padding: $padding;
         display: inline-block;
         filter: invert(0);
-
-        &:last-child {
-            margin-right: 0;
-        }
 
         img {
             height: inherit;
@@ -366,9 +365,35 @@ table {
         }
     }
 
+    &:last-of-type {
+        &::before {
+            $scale: 2;
+
+            content: "·";
+            position: relative;
+            margin-right: math.div($base-margin, $scale);
+            font-size: #{$scale}rem;
+            top: -0.5ex;
+        }
+
+        a {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
     @media (orientation: portrait) {
         width: fit-content;
-        margin: 0 auto;
+        display: block;
+
+        &:last-of-type {
+            margin-top: $base-margin;
+
+            &::before {
+                display: none;
+            }
+        }
     }
 }
 
@@ -438,7 +463,7 @@ table {
         }
     }
 
-    .socials a img {
+    .footer-links a img {
         filter: invert(1);
         opacity: 80%;
     }

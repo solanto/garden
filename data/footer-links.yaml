@@ -1,0 +1,15 @@
+socials:
+  - alt:  linktree
+    link: https://linktr.ee/andrewsolanto
+  - alt:  instagram
+    link: https://instagram.com/andrewsolanto
+  - alt:  github
+    link: https://github.com/solanto
+  - alt:  linkedin
+    link: https://linkedin.com/in/andrewsolanto
+extras:
+  - alt: goatcounter
+    link: https://andrews-garden.goatcounter.com/
+  - alt:  atom feed
+    link: /feed.xml
+    icon: feed

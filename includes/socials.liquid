@@ -1,8 +1,0 @@
-<div class="socials">
-    {% for social in socials %}
-    {% if social.icon %}{% assign icon = social.icon %}{% else %}{% assign icon = social.alt %}{% endif %}
-    <a href="{{ social.link }}">
-        <img src="/assets/socials/{{ icon }}.svg" alt="{{ social.alt }}">
-    </a>
-    {% endfor %}
-</div>
