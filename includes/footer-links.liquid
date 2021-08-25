@@ -1,16 +1,10 @@
 <div class="footer-links">
     {% for social in footer-links.socials %}
-    {% if social.icon %}{% assign icon = social.icon %}{% else %}{% assign icon = social.alt %}{% endif %}
-    <a href="{{ social.link }}">
-        <img src="/assets/footer-links/{{ icon }}.svg" alt="{{ social.alt }}">
-    </a>
+    {% include footer-link, link: social.link, icon: social.icon, alt: social.alt %}
     {% endfor %}
 </div>
 <div class="footer-links">
     {% for extra in footer-links.extras %}
-    {% if extra.icon %}{% assign icon = extra.icon %}{% else %}{% assign icon = extra.alt %}{% endif %}
-    <a href="{{ extra.link }}">
-        <img src="/assets/footer-links/{{ icon }}.svg" alt="{{ extra.alt }}">
-    </a>
+    {% include footer-link, link: extra.link, icon: extra.icon, alt: extra.alt %}
     {% endfor %}
 </div>
