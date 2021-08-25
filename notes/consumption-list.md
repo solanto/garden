@@ -85,6 +85,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [The Korean Vegan](https://youtube.com/c/TheKoreanVegan)
 * [Linus Boman](https://youtube.com/c/LinusBoman)
 * [Zoe Bee](https://youtube.com/channel/UCecF2icZlEIJ__9XS6woPGw)
+* [Claire Saffitz x Dessert Person](https://youtube.com/c/ClaireSaffitzxDessertPerson)
+* [Answer in Progress](https://youtube.com/c/answerinprogress)
 
 ## music
 
