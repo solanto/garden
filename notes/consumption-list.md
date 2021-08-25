@@ -84,6 +84,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [Lisa Nguyen](https://youtube.com/c/LisaNguyen)
 * [The Korean Vegan](https://youtube.com/c/TheKoreanVegan)
 * [Linus Boman](https://youtube.com/c/LinusBoman)
+* [Zoe Bee](https://youtube.com/channel/UCecF2icZlEIJ__9XS6woPGw)
 
 ## music
 
