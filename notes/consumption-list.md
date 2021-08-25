@@ -55,6 +55,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
   * includes episodes of the podcast now named [Spectacular Vernacular](https://slate.com/podcasts/spectacular-vernacular) from [6 July 2021 and before](https://slate.com/podcasts/lexicon-valley)
 * [Word Wrap](https://wordwrap.dev/)
 * [Ologies with Alie Ward](https://www.alieward.com/ologies)
+* [Allt du velat veta](https://play.acast.com/s/alltduvelatveta)
+  * lots of interviews = lots of accent practice
 
 ## videogames
 
