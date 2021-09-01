@@ -57,6 +57,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [Ologies with Alie Ward](https://www.alieward.com/ologies)
 * [Allt du velat veta](https://play.acast.com/s/alltduvelatveta)
   * lots of interviews = lots of accent practice
+* [Tack för maten!](https://www.instagram.com/tack.fm/)
+  * my favorite Swedish podcast so far! it's a great break from podcasts recorded in "simple swedish;" Barje and Triumf speak really clearly yet naturally
 
 ## videogames
 
