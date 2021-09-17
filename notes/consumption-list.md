@@ -55,6 +55,10 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
   * includes episodes of the podcast now named [Spectacular Vernacular](https://slate.com/podcasts/spectacular-vernacular) from [6 July 2021 and before](https://slate.com/podcasts/lexicon-valley)
 * [Word Wrap](https://wordwrap.dev/)
 * [Ologies with Alie Ward](https://www.alieward.com/ologies)
+* [Allt du velat veta](https://play.acast.com/s/alltduvelatveta)
+  * lots of interviews = lots of accent practice
+* [Tack för maten!](https://www.instagram.com/tack.fm/)
+  * my favorite Swedish podcast so far! it's a great break from podcasts recorded in "simple swedish;" Barje and Triumf speak really clearly yet naturally
 
 ## videogames
 
@@ -85,6 +89,9 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [The Korean Vegan](https://youtube.com/c/TheKoreanVegan)
 * [Linus Boman](https://youtube.com/c/LinusBoman)
 * [Zoe Bee](https://youtube.com/channel/UCecF2icZlEIJ__9XS6woPGw)
+* [Claire Saffitz x Dessert Person](https://youtube.com/c/ClaireSaffitzxDessertPerson)
+* [Answer in Progress](https://youtube.com/c/answerinprogress)
+* [Technology Connections](https://youtube.com/c/TechnologyConnections)
 
 ## music
 
