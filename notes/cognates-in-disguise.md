@@ -50,3 +50,22 @@ I made a fun presentation on this word for some friends. I like to highlight how
 <figure>
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQB_rtSMfLU1c5Iu9hkopZy7Cuk-QPejz5C3MW5GSphTPR9VYbE29v0dhL1eVETKEU2ofteUDvR8e-C/embed?start=false&loop=false&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy" width="800px" height="479px"></iframe>
 </figure>
+
+## *tomber* and *tumble*
+
+I didn't expect this one! *Tomber* had always felt oddly out-of-place for me considering Spanish's *caer* and Portuguese's *cair*. As it turns out, *tomber* might derive from Germanic [**tūmōną*](https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/t%C5%ABm%C5%8Dn%C4%85).
+
+## lots of ways to move things upward
+
+In Stockholm's [Tunnelbana](https://en.wikipedia.org/wiki/Stockholm_metro) stations, I would always wonder: why would all the elevators be labeled *hiss*? It never sounded very elevator-y. But, upon investigation, its etymology shows up in many Indoeuropean languages! All of the following verbs derive from German *hissen* (or maybe Dutch *hisen*):
+
+| language | word |
+| --- | --- |
+| english | hoist |
+| spanish | izar |
+| french | hisser |
+| portuguese | içar |
+| swedish | hissa |
+
+These verbs don't stop at sounding similar—they all mean exactly the same thing, too.
+
