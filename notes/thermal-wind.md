@@ -32,7 +32,7 @@ Geostrophic flows are stable, and currents tend to fall into geostrophic flow wh
 
 ### a formal definition
 
-This is the definition I learned for thermal wind balance in zonal winds.
+This is the definition I learned for thermal wind balance in [zonal](https://en.wikipedia.org/wiki/Zonal_and_meridional_flow) winds.
 
 {% mathd %}
 \frac{\partial u}{\partial ( \ln (p) )}=-\frac{R}{f}\frac{\partial T}{\partial y}
