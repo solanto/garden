@@ -62,7 +62,8 @@ Imagine stacked [parcels of air](https://glossary.ametsoc.org/wiki/Air_parcel) i
 
 We can call the change in pressure, or pressure gradient, from the cold region to the hot region {% math %}\nabla p{% endmath %}; we observe that the grade is steeper aloft than afoot, so that {% math %}\nabla p_3 > \nabla p_2 > \nabla p_1{% endmath %}.
 
-Remember how pressure gradients love pushing air around? As pressure imbalance increases with height, winds blow faster higher up—even if the Coriolis effect twists them sideways in the end!
+Remember how pressure gradients love pushing air around? As pressure imbalance increases with height, winds blow faster higher up—even if the Coriolis effect twists them sideways in the end![^1]
 
 ![](/assets/p-gradients-wind-shear.jpg)
 
+[^1]: I learned in physics class to *never* think of centripetal acceleration as "centrifugal force;" it’s taken some time for me to get used to how common it is to think of the the Coriolis effect as a "force" in environmental science. Earth is just so big as a physical system, so I can see how zooming out every time to consider Earth’s rotation could be tiring. However, if you’d like to zoom out, this [mini physical demo of thermal wind by Dr. Mirjam S. Glessmer](https://mirjamglessmer.com/2019/08/14/combining-a-slowly-rotating-water-tank-with-a-temperature-gradient-a-thermal-wind-demonstration/) is super cool!
