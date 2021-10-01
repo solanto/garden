@@ -110,14 +110,14 @@ module.exports = eleventyConfig => {
 
     const katex = require("katex");
     eleventyConfig.addPairedShortcode("math", latex => katex.renderToString(latex, {throwOnError: true}));
-    eleventyConfig.addPairedShortcode("mathd", latex => /*html*/ `
-        <figure class="math">
-            ${katex.renderToString(latex, {
+    eleventyConfig.addPairedShortcode("mathd", latex => /*html*/
+        `<figure class="math">` +
+            katex.renderToString(latex, {
                 throwOnError: true,
                 displayMode: true,
-            })}
-        </figure>
-    `)
+            }) + /*html*/
+        `</figure>`
+    )
 
     eleventyConfig.addShortcode("style", href => /*html*/ `
         <link rel="preload" href=${href} as="style" onload="this.onload=null;this.rel='stylesheet'">
