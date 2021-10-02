@@ -6,7 +6,7 @@ styles: katex
 
 # modeling mathematical moment
 
-When I learned about moments in probability, I was determined to find some connection to the [moment](https://en.wikipedia.org/wiki/Moment_(physics)) I learned about in physics. As it turns out, the moment of a distribution can be very practical info!
+When I learned about [moments](https://en.wikipedia.org/wiki/Moment_(mathematics)) in probability, I was determined to find some connection to the [moment](https://en.wikipedia.org/wiki/Moment_(physics)) I learned about in physics. As it turns out, the moment of a distribution can be very practical info!
 
 Formally, we define the {% math %}n{% endmath %}th moment about center {% math %}c{% endmath %} of a distribution {% math %}f(x){% endmath %} as:
 
