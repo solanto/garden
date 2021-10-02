@@ -27,4 +27,5 @@ But this didn't click for me until I visualized {% math %}f{% endmath %} as a di
         "
         frameborder=0
     ></iframe>
+    <figcaption>also available <a href="https://www.desmos.com/calculator/eggalijckq" rel="noopener noreferrer" target="_blank" class="external">on Desmos</a> :)</figcaption>
 </figure>
