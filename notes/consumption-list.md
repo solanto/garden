@@ -59,6 +59,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
   * lots of interviews = lots of accent practice
 * [Tack för maten!](https://www.instagram.com/tack.fm/)
   * my favorite Swedish podcast so far! it's a great break from podcasts recorded in "simple swedish;" Barje and Triumf speak really clearly yet naturally
+* [The History of English Podcast](https://historyofenglishpodcast.com/)
 
 ## videogames
 
