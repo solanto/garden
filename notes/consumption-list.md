@@ -93,6 +93,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [Claire Saffitz x Dessert Person](https://youtube.com/c/ClaireSaffitzxDessertPerson)
 * [Answer in Progress](https://youtube.com/c/answerinprogress)
 * [Technology Connections](https://youtube.com/c/TechnologyConnections)
+* [Michelle Khare](https://youtube.com/c/MichelleKhare)
 
 ## music
 
