@@ -94,6 +94,8 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [Answer in Progress](https://youtube.com/c/answerinprogress)
 * [Technology Connections](https://youtube.com/c/TechnologyConnections)
 * [Michelle Khare](https://youtube.com/c/MichelleKhare)
+* [junelikethemonth](https://youtube.com/c/junelikethemonth) and her [Delish appearances](https://youtube.com/playlist?list=PLQGGrzFoybiMmomptVP19IMipHI_uU7qr)
+  * her [Budget Eats](https://youtube.com/playlist?list=PLQGGrzFoybiODbgicKUBebtlgZDklbh81) are my favorite!
 
 ## music
 
