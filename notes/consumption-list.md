@@ -44,22 +44,22 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 * [The Strange Case of Starship Iris](https://www.procyonpodcastnetwork.com/tscosi-eps)
   * season 2 ongoing
-* [Mamilos](https://www.b9.com.br/shows/mamilos/)
-* [Cosas que dijimos hoy](https://www.abrazogrupal.com/nuestros-podcasts)
-* [Sidenote by AsapSCIENCE](https://www.asapscience.com/podcast)
-* [Simple Swedish Podcast](https://www.swedishlinguist.com/podcast/)
+* [Mamilos](https://www.b9.com.br/shows/mamilos/) (Juliana Wallauer & Cris Bartis)
+* [Cosas que dijimos hoy](https://www.abrazogrupal.com/nuestros-podcasts) (Abrazo Grupal)
+* [Sidenote by AsapSCIENCE](https://www.asapscience.com/podcast) (Mitchell Moffit & Gregory Brown)
+* [Simple Swedish Podcast](https://www.swedishlinguist.com/podcast/) (Fredrik Arhusiander)
   * great for learning the language!
 * [99% Invisible](https://99percentinvisible.org/)
-* [Lingthusiasm](https://lingthusiasm.com/)
-* [Lexicon Valley](https://www.booksmartstudios.org/s/lexicon-valley?utm_source=substack&utm_medium=menu)
+* [Lingthusiasm](https://lingthusiasm.com/) (Gretchen McCulloch & Lauren Gawne)
+* [Lexicon Valley](https://www.booksmartstudios.org/s/lexicon-valley?utm_source=substack&utm_medium=menu) (John McWhorter)
   * includes episodes of the podcast now named [Spectacular Vernacular](https://slate.com/podcasts/spectacular-vernacular) from [6 July 2021 and before](https://slate.com/podcasts/lexicon-valley)
-* [Word Wrap](https://wordwrap.dev/)
+* [Word Wrap](https://wordwrap.dev/) (Stephanie Eckles & Claire)
 * [Ologies with Alie Ward](https://www.alieward.com/ologies)
-* [Allt du velat veta](https://play.acast.com/s/alltduvelatveta)
+* [Allt du velat veta](https://play.acast.com/s/alltduvelatveta) (Fritte Fritzson)
   * lots of interviews = lots of accent practice
-* [Tack för maten!](https://www.instagram.com/tack.fm/)
+* [Tack för maten!](https://www.instagram.com/tack.fm/) (Siri Barje & Kristoffer Triumf)
   * my favorite Swedish podcast so far! it's a great break from podcasts recorded in "simple swedish;" Barje and Triumf speak really clearly yet naturally
-* [The History of English Podcast](https://historyofenglishpodcast.com/)
+* [The History of English Podcast](https://historyofenglishpodcast.com/) (Kevin Stroud)
 
 ## videogames
 
@@ -81,20 +81,20 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 
 ## youtube channels
 
-* [emmymade](https://youtube.com/c/emmymade)
+* [emmymade](https://youtube.com/c/emmymade) (Emmy Cho)
 * [Tom Scott](https://youtube.com/c/TomScottGo)
 * [Steve Mould](https://youtube.com/c/SteveMould)
-* [Babish Culinary Universe](https://youtube.com/c/bingingwithbabish)
-* [AsapSCIENCE](https://youtube.com/user/AsapSCIENCE)
+* [Babish Culinary Universe](https://youtube.com/c/bingingwithbabish) (Andrew Rea)
+* [AsapSCIENCE](https://youtube.com/user/AsapSCIENCE) (Mitchell Moffit & Gregory Brown)
 * [Lisa Nguyen](https://youtube.com/c/LisaNguyen)
-* [The Korean Vegan](https://youtube.com/c/TheKoreanVegan)
+* [The Korean Vegan](https://youtube.com/c/TheKoreanVegan) (Joanne Molinaro)
 * [Linus Boman](https://youtube.com/c/LinusBoman)
-* [Zoe Bee](https://youtube.com/channel/UCecF2icZlEIJ__9XS6woPGw)
+* [Zoe Bee](https://youtube.com/channel/UCecF2icZlEIJ__9XS6woPGw) 
 * [Claire Saffitz x Dessert Person](https://youtube.com/c/ClaireSaffitzxDessertPerson)
-* [Answer in Progress](https://youtube.com/c/answerinprogress)
+* [Answer in Progress](https://youtube.com/c/answerinprogress) 
 * [Technology Connections](https://youtube.com/c/TechnologyConnections)
 * [Michelle Khare](https://youtube.com/c/MichelleKhare)
-* [junelikethemonth](https://youtube.com/c/junelikethemonth) and her [Delish appearances](https://youtube.com/playlist?list=PLQGGrzFoybiMmomptVP19IMipHI_uU7qr)
+* [junelikethemonth](https://youtube.com/c/junelikethemonth) (June Xie) and her [Delish appearances](https://youtube.com/playlist?list=PLQGGrzFoybiMmomptVP19IMipHI_uU7qr)
   * her [Budget Eats](https://youtube.com/playlist?list=PLQGGrzFoybiODbgicKUBebtlgZDklbh81) are my favorite!
 
 ## music
