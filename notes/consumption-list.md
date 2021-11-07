@@ -95,7 +95,7 @@ This is some of the media I’ve most enjoyed, am currently consuming, would rec
 * [Technology Connections](https://youtube.com/c/TechnologyConnections)
 * [Michelle Khare](https://youtube.com/c/MichelleKhare)
 * [junelikethemonth](https://youtube.com/c/junelikethemonth) (June Xie) and her [Delish appearances](https://youtube.com/playlist?list=PLQGGrzFoybiMmomptVP19IMipHI_uU7qr)
-  * her [Budget Eats](https://youtube.com/playlist?list=PLQGGrzFoybiODbgicKUBebtlgZDklbh81) are my favorite!
+  * her [Budget Eats](https://youtube.com/playlist?list=PLQGGrzFoybiODbgicKUBebtlgZDklbh81) and livestreams are my favorites!
 * [Jeanelleats](https://youtube.com/c/JeanellEats) (Jeanelle Castro)
 
 ## music
