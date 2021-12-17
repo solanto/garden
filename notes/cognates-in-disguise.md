@@ -69,3 +69,8 @@ In Stockholm's [Tunnelbana](https://en.wikipedia.org/wiki/Stockholm_metro) stati
 
 These verbs don't stop at sounding similar—they all mean exactly the same thing, too.
 
+## by the (re)bootstraps
+
+[*Boot*](https://en.m.wiktionary.org/wiki/boot#English), in the computing sense of an electronic device starting up, is a clipping of *bootstrap*. This, in turn, is a clipping of the phrase "pull yourself up by the bootstraps."
+
+Funnily, a word like *reboot*—derived from *boot*—is in some way "re-pulling yourself up by the bootstraps!"
