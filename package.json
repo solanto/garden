@@ -46,6 +46,6 @@
     "markdown-it-implicit-figures": "^0.10.0",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",
-    "sharp": "^0.27.2"
+    "sharp": "^0.30.5"
   }
 }
